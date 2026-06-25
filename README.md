@@ -15,7 +15,5 @@ const XpNeededPerGuildLevel: number[] = GUILD_XP
 > [!NOTE]
 > Credits to: https://github.com/SkyCryptWebsite/SkyCrypt and others.
 
-<br/>
-
 > [!NOTE]
 > This Project is not affiliated or endorsed by [Hypixel, Inc.](https://hypixel.net/)
