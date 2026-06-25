@@ -12,5 +12,5 @@ import { GUILD_XP } from "@hypixelic/constants"
 const XpNeededPerGuildLevel: number[] = GUILD_XP
 ```
 
-> [!INFO]
+> [!NOTE]
 > Credits to: https://github.com/SkyCryptWebsite/SkyCrypt and others.
