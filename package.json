@@ -7,7 +7,9 @@
   },
   "type": "module",
   "scripts": {
-    "build": "pnpm tsc"
+    "build": "pnpm tsc",
+    "prettier:check": "pnpm dlx prettier . --check",
+    "prettier:write": "pnpm dlx prettier . --write"
   },
   "devDependencies": {
     "typescript": "^6.0.3"
