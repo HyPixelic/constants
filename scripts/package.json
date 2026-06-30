@@ -1,13 +1,12 @@
 {
   "type": "module",
   "scripts": {
-    "prettier:check": "pnpm prettier --config ../.prettierrc --ignore-path ../.prettierignore .. --check",
-    "prettier:write": "pnpm prettier --config ../.prettierrc --ignore-path ../.prettierignore .. --write"
+    "prettier:check": "pnpm dlx prettier --config ../.prettierrc --ignore-path ../.prettierignore .. --check",
+    "prettier:write": "pnpm dlx prettier --config ../.prettierrc --ignore-path ../.prettierignore .. --write"
   },
   "dependencies": {
     "@pixelic/logger": "jsr:^0.1.0",
-    "axios": "^1.18.1",
-    "prettier": "^3.9.3"
+    "axios": "^1.18.1"
   },
   "devDependencies": {
     "@types/node": "^26.0.1",
