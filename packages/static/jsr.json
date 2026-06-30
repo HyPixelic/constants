@@ -6,9 +6,8 @@
   "publish": {
     "include": [
       "./index.ts",
-      "../../LICENSE",
-      "README.md",
-      "../../constants/*.json"
+      "./constants",
+      "README.md"
     ]
   }
 }
