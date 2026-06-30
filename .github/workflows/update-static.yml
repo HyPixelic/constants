@@ -1,9 +1,5 @@
 name: "[Static] Node.js CI (Fetch Resources)"
 
-defaults:
-  run:
-    working-directory: ./scripts
-
 on:
   schedule:
     - cron: "0 12 * * *"
@@ -13,7 +9,10 @@ permissions:
   contents: write
 
 jobs:
-  check:
+  update:
+    defaults:
+      run:
+        working-directory: ./scripts
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
@@ -28,3 +27,21 @@ jobs:
           add: '["packages/static/constants","packages/static/jsr.json"]'
           message: "Updated Constants"
           default_author: "github_actions"
+  release:
+    defaults:
+      run:
+        working-directory: ./packages/static
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v6
+      - name: Use PNPM Package Manager
+        uses: pnpm/action-setup@v6
+        with:
+          version: 11
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm dlx jsr publish --token $JSR_TOKEN
+        env:
+          JSR_TOKEN: ${{ secrets.JSR_TOKEN }}
