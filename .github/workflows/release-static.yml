@@ -11,7 +11,9 @@ on:
     branches:
       - main
   workflow_run:
-    workflows: ["[Static] Node.js CI (Fetch Resources)"]
+    workflows: ["update-static.yml"]
+    branches:
+      - main
     types:
       - completed
   workflow_dispatch:
