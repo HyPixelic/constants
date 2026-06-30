@@ -42,47 +42,47 @@ await Promise.all([
   fetchResource(
     "Games",
     "https://api.hypixel.net/v2/resources/games",
-    resolve(process.cwd(), "../constants/games.json"),
+    resolve(process.cwd(), "../packages/static/constants/games.json"),
   ),
   fetchResource(
     "Achievements",
     "https://api.hypixel.net/v2/resources/achievements",
-    resolve(process.cwd(), "../constants/achievements.json"),
+    resolve(process.cwd(), "../packages/static/constants/achievements.json"),
   ),
   fetchResource(
     "Challenges",
     "https://api.hypixel.net/v2/resources/challenges",
-    resolve(process.cwd(), "../constants/challenges.json"),
+    resolve(process.cwd(), "../packages/static/constants/challenges.json"),
   ),
   fetchResource(
     "Quests",
     "https://api.hypixel.net/v2/resources/quests",
-    resolve(process.cwd(), "../constants/quests.json"),
+    resolve(process.cwd(), "../packages/static/constants/quests.json"),
   ),
   fetchResource(
     "GuildAchievements",
     "https://api.hypixel.net/v2/resources/guilds/achievements",
-    resolve(process.cwd(), "../constants/guildAchievements.json"),
+    resolve(process.cwd(), "../packages/static/constants/guildAchievements.json"),
   ),
   fetchResource(
     "VanityPets",
     "https://api.hypixel.net/v2/resources/vanity/pets",
-    resolve(process.cwd(), "../constants/vanityPets.json"),
+    resolve(process.cwd(), "../packages/static/constants/vanityPets.json"),
   ),
   fetchResource(
     "VanityCompanions",
     "https://api.hypixel.net/v2/resources/vanity/companions",
-    resolve(process.cwd(), "../constants/vanityCompanions.json"),
+    resolve(process.cwd(), "../packages/static/constants/vanityCompanions.json"),
   ),
   fetchResource(
     "Collections",
     "https://api.hypixel.net/v2/resources/skyblock/collections",
-    resolve(process.cwd(), "../constants/skyblock/collections.json"),
+    resolve(process.cwd(), "../packages/static/constants/skyblock/collections.json"),
   ),
   fetchResource(
     "Items",
     "https://api.hypixel.net/v2/resources/skyblock/items",
-    resolve(process.cwd(), "../constants/skyblock/items.json"),
+    resolve(process.cwd(), "../packages/static/constants/skyblock/items.json"),
   ),
 ]);
 
