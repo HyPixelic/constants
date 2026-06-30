@@ -1,5 +1,9 @@
 name: Node.js CI (Prettier Check)
 
+defaults:
+  run:
+    working-directory: ./scripts
+
 on:
   push:
 

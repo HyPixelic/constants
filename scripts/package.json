@@ -1,8 +1,8 @@
 {
   "type": "module",
   "scripts": {
-    "prettier:check": "pnpm prettier .. --check",
-    "prettier:write": "pnpm prettier .. --write"
+    "prettier:check": "pnpm prettier --config ../.prettierrc --ignore-path ../.prettierignore .. --check",
+    "prettier:write": "pnpm prettier --config ../.prettierrc --ignore-path ../.prettierignore .. --write"
   },
   "dependencies": {
     "@pixelic/logger": "jsr:^0.1.0",
