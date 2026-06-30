@@ -1,0 +1,30 @@
+name: "[Static] Node.js CI (Publish to JSR)"
+
+defaults:
+  run:
+    working-directory: ./packages/static
+
+on:
+  push:
+    paths:
+      - "packages/static/**"
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v6
+      - name: Use PNPM Package Manager
+        uses: pnpm/action-setup@v6
+        with:
+          version: 11
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm dlx jsr publish
+        env:
+          JSR_TOKEN: ${{ secrets.JSR_TOKEN }}
