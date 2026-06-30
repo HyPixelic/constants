@@ -10,6 +10,10 @@ on:
       - "packages/static/**"
     branches:
       - main
+  workflow_run:
+    workflows: ["[Static] Node.js CI (Fetch Resources)"]
+    types:
+      - completed
   workflow_dispatch:
 
 jobs:
