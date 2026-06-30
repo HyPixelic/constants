@@ -1,5 +1,9 @@
 name: "[Static] Node.js CI (Fetch Resources)"
 
+defaults:
+  run:
+    working-directory: ./scripts
+
 on:
   schedule:
     - cron: "0 12 * * *"
