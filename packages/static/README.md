@@ -1,5 +1,8 @@
 # HyPixelic/static-constants
 
+![Version](https://jsr.io/badges/@hypixelic/static-constants)
+![Downloads](https://jsr.io/badges/@hypixelic/static-constants/total-downloads)
+
 ## ✨ Quick Start
 
 [`npm`](https://npmjs.com/) » `npx jsr add @hypixelic/static-constants`<br/>
