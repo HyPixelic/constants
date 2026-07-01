@@ -1,5 +1,3 @@
-import axios from "axios";
-
 /**
  * Type containing all possible keys for the Constants Object.
  */
@@ -37,7 +35,7 @@ const resources: Record<Constant, string> = {
 
 const fetchResources = async (): Promise<void> => {
   for (const [key, value] of Object.entries(resources) as [Constant, string][]) {
-    constants[key] = (await axios.get<object>(value)).data;
+    constants[key] = await (await fetch(value)).json();
   }
 };
 
