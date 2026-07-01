@@ -1,8 +1,29 @@
 import axios from "axios";
 
-const constants: Record<any, any> = {};
+/**
+ * Type containing all possible keys for the Constants Object.
+ */
+type Constant =
+  | "GAMES"
+  | "ACHIEVEMENTS"
+  | "GUILD_ACHIEVEMENTS"
+  | "QUESTS"
+  | "CHALLENGES"
+  | "VANITY_PETS"
+  | "VANITY_COMPANIONS"
+  | "SKYBLOCK_COLLECTIONS"
+  | "SKYBLOCK_ITEMS";
 
-const resources = {
+/**
+ * Object containing a list of key-value pairs representing the Hypixel Constants.
+ *
+ * @example const gameModes = constants.GAMES
+ * @example const skyblockItems = constants.SKYBLOCK_ITEMS
+ */
+// @ts-expect-error
+const constants: Record<Constant, object> = {};
+
+const resources: Record<Constant, string> = {
   GAMES: "https://api.hypixel.net/v2/resources/games",
   ACHIEVEMENTS: "https://api.hypixel.net/v2/resources/achievements",
   GUILD_ACHIEVEMENTS: "https://api.hypixel.net/v2/resources/guilds/achievements",
@@ -15,8 +36,8 @@ const resources = {
 };
 
 const fetchResources = async (): Promise<void> => {
-  for (const [key, value] of Object.entries(resources)) {
-    constants[key] = (await axios.get(value)).data;
+  for (const [key, value] of Object.entries(resources) as [Constant, string][]) {
+    constants[key] = (await axios.get<object>(value)).data;
   }
 };
 
