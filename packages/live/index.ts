@@ -35,7 +35,11 @@ const resources: Record<Constant, string> = {
 
 const fetchResources = async (): Promise<void> => {
   for (const [key, value] of Object.entries(resources) as [Constant, string][]) {
-    constants[key] = await (await fetch(value)).json();
+    try {
+      constants[key] = await (await fetch(value)).json();
+    } catch {
+      console.log("Failed to fetch resource.");
+    }
   }
 };
 
