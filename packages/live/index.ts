@@ -36,7 +36,7 @@ const resources: Record<Constant, Resource> = {
 };
 
 const fetchResources = async (): Promise<void> => {
-  for (const [key, value] of Object.entries(resources) as [Constant, string][]) {
+  for (const [key, value] of Object.entries(resources) as [Constant, Resource][]) {
     try {
       if (Array.isArray(value)) {
         constants[key] = (await (await fetch(value[0])).json())[value[1]];
