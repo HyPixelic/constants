@@ -2,6 +2,7 @@
  * Type containing all possible keys for the Constants Object.
  */
 type Constant =
+  | "LAST_UPDATED"
   | "GAMES"
   | "ACHIEVEMENTS"
   | "GUILD_ACHIEVEMENTS"
@@ -19,11 +20,13 @@ type Constant =
  * @example const skyblockItems = constants.SKYBLOCK_ITEMS
  */
 // @ts-expect-error
-const constants: Record<Constant, any> = {};
+const constants: Record<Constant, any> = {
+  LAST_UPDATED: new Date().toJSON(),
+};
 
 type Resource = string | string[];
 
-const resources: Record<Constant, Resource> = {
+const resources: Record<Exclude<Constant, "LAST_UPDATED">, Resource> = {
   GAMES: ["https://api.hypixel.net/v2/resources/games", "games"],
   ACHIEVEMENTS: ["https://api.hypixel.net/v2/resources/achievements", "achievements"],
   GUILD_ACHIEVEMENTS: "https://api.hypixel.net/v2/resources/guilds/achievements",
@@ -49,6 +52,7 @@ const fetchResources = async (): Promise<void> => {
       console.log("Failed to fetch resource.");
     }
   }
+  constants["LAST_UPDATED"] = new Date().toJSON();
 };
 
 await fetchResources();

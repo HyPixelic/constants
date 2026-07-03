@@ -1,3 +1,4 @@
+import LAST_UPDATED from "./constants/lastUpdated.json" with { type: "json" };
 import GAMES from "./constants/games.json" with { type: "json" };
 import ACHIEVEMENTS from "./constants/achievements.json" with { type: "json" };
 import GUILD_ACHIEVEMENTS from "./constants/guildAchievements.json" with { type: "json" };
@@ -12,6 +13,7 @@ import SKYBLOCK_ITEMS from "./constants/skyblock/items.json" with { type: "json"
  * Type containing all possible keys for the Constants Object.
  */
 type Constant =
+  | "LAST_UPDATED"
   | "GAMES"
   | "ACHIEVEMENTS"
   | "GUILD_ACHIEVEMENTS"
@@ -29,6 +31,7 @@ type Constant =
  * @example const skyblockItems = constants.SKYBLOCK_ITEMS
  */
 const constants: Record<Constant, any> = {
+  LAST_UPDATED: LAST_UPDATED[0],
   GAMES,
   ACHIEVEMENTS,
   GUILD_ACHIEVEMENTS,
@@ -40,7 +43,7 @@ const constants: Record<Constant, any> = {
   SKYBLOCK_ITEMS,
 };
 
-const objectMap: Record<Constant, null | string> = {
+const objectMap: Record<Exclude<Constant, "LAST_UPDATED">, null | string> = {
   GAMES: "games",
   ACHIEVEMENTS: "achievements",
   GUILD_ACHIEVEMENTS: null,
