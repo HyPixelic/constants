@@ -87,5 +87,7 @@ await Promise.all([
 ]);
 
 if (changed) {
+  const lastUpdatedPath = resolve(process.cwd(), "../packages/static/constants/lastUpdated.json");
+  writeFileSync(lastUpdatedPath, JSON.stringify([new Date().toJSON()], null, 2) + "\n", "utf8");
   execSync("pnpm tsx bumpVersion.ts", { stdio: "inherit" });
 }
