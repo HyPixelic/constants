@@ -16,8 +16,13 @@ type Constant =
 /**
  * Object containing a list of key-value pairs representing the Hypixel Constants.
  *
- * @example const gameModes = constants.GAMES
- * @example const skyblockItems = constants.SKYBLOCK_ITEMS
+ * @example
+ *
+ * ```ts
+ * import constants from '@hypixelic/constants'
+ *
+ * const gameModes = constants.GAMES
+ * ```
  */
 // @ts-expect-error
 const constants: Record<Constant, any> = {
@@ -63,4 +68,18 @@ setInterval(
   24 * 60 * 60 * 1000,
 );
 
+/**
+ * Updates the constants with the latest data from the Hypixel API.
+ *
+ * @example
+ *
+ * ```ts
+ * import constants, { updateConstants } from '@hypixelic/constants';
+ *
+ * await updateConstants();
+ *
+ * console.log(constants.SKYBLOCK_ITEMS); // Logs latest Skyblock Items data
+ * ```
+ */
+export const updateConstants = fetchResources;
 export default constants;
