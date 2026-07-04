@@ -27,8 +27,13 @@ type Constant =
 /**
  * Object containing a list of key-value pairs representing the Hypixel Constants.
  *
- * @example const gameModes = constants.GAMES
- * @example const skyblockItems = constants.SKYBLOCK_ITEMS
+ * @example
+ *
+ * ```ts
+ * import constants from '@hypixelic/constants'
+ *
+ * const gameModes = constants.GAMES
+ * ```
  */
 const constants: Record<Constant, any> = {
   LAST_UPDATED: LAST_UPDATED[0],
