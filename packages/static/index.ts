@@ -8,6 +8,7 @@ import VANITY_PETS from "./constants/vanityPets.json" with { type: "json" };
 import VANITY_COMPANIONS from "./constants/vanityCompanions.json" with { type: "json" };
 import SKYBLOCK_COLLECTIONS from "./constants/skyblock/collections.json" with { type: "json" };
 import SKYBLOCK_ITEMS from "./constants/skyblock/items.json" with { type: "json" };
+import SKYBLOCK_SKILLS from "./constants/skyblock/skills.json" with { type: "json" };
 
 /**
  * Type containing all possible keys for the Constants Object.
@@ -22,7 +23,8 @@ type Constant =
   | "VANITY_PETS"
   | "VANITY_COMPANIONS"
   | "SKYBLOCK_COLLECTIONS"
-  | "SKYBLOCK_ITEMS";
+  | "SKYBLOCK_ITEMS"
+  | "SKYBLOCK_SKILLS";
 
 /**
  * Object containing a list of key-value pairs representing the Hypixel Constants.
@@ -46,6 +48,7 @@ const constants: Record<Constant, any> = {
   VANITY_COMPANIONS,
   SKYBLOCK_COLLECTIONS,
   SKYBLOCK_ITEMS,
+  SKYBLOCK_SKILLS,
 };
 
 const objectMap: Record<Exclude<Constant, "LAST_UPDATED">, null | string> = {
@@ -58,6 +61,7 @@ const objectMap: Record<Exclude<Constant, "LAST_UPDATED">, null | string> = {
   VANITY_COMPANIONS: null,
   SKYBLOCK_COLLECTIONS: "collections",
   SKYBLOCK_ITEMS: "items",
+  SKYBLOCK_SKILLS: "skills",
 };
 
 for (const [key, value] of Object.entries(objectMap) as [Constant, null | string][]) {

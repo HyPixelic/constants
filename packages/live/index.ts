@@ -11,7 +11,8 @@ type Constant =
   | "VANITY_PETS"
   | "VANITY_COMPANIONS"
   | "SKYBLOCK_COLLECTIONS"
-  | "SKYBLOCK_ITEMS";
+  | "SKYBLOCK_ITEMS"
+  | "SKYBLOCK_SKILLS";
 
 /**
  * Object containing a list of key-value pairs representing the Hypixel Constants.
@@ -41,6 +42,7 @@ const resources: Record<Exclude<Constant, "LAST_UPDATED">, Resource> = {
   VANITY_COMPANIONS: "https://api.hypixel.net/v2/resources/vanity/companions",
   SKYBLOCK_COLLECTIONS: ["https://api.hypixel.net/v2/resources/skyblock/collections", "collections"],
   SKYBLOCK_ITEMS: ["https://api.hypixel.net/v2/resources/skyblock/items", "items"],
+  SKYBLOCK_SKILLS: ["https://api.hypixel.net/v2/resources/skyblock/skills", "skills"],
 };
 
 const fetchResources = async (): Promise<void> => {
