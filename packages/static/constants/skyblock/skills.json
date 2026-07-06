@@ -1,7 +1,7 @@
 {
   "success": true,
-  "lastUpdated": 1783194212120,
-  "version": "0.25.0.52",
+  "lastUpdated": 1783294112142,
+  "version": "0.25.0.53",
   "skills": {
     "FARMING": {
       "name": "Farming",
@@ -2690,11 +2690,11 @@
           "level": 17,
           "totalExpRequired": 147425,
           "unlocks": [
-            "??? Sea Creature",
-            "??? Sea Creature",
-            "??? Sea Creature",
-            "??? Sea Creature",
-            "??? Sea Creature",
+            "Guardian Defender Sea Creature",
+            "Werewolf Sea Creature",
+            "Stridersurfer Sea Creature",
+            "Poisoned Water Worm Sea Creature",
+            "Volcanic Snail Sea Creature",
             "Treasure Hunter XVII   Grants +1.6➜1.7 ⛃ Treasure Chance.",
             "+3 ❤ Health",
             "+50,000 Coins",
@@ -2705,8 +2705,8 @@
           "level": 18,
           "totalExpRequired": 222425,
           "unlocks": [
-            "??? Sea Creature",
-            "??? Sea Creature",
+            "Tiger Shark Sea Creature",
+            "Deep Sea Protector Sea Creature",
             "Treasure Hunter XVIII   Grants +1.7➜1.8 ⛃ Treasure Chance.",
             "+3 ❤ Health",
             "+65,000 Coins",
@@ -2717,9 +2717,9 @@
           "level": 19,
           "totalExpRequired": 322425,
           "unlocks": [
-            "??? Sea Creature",
-            "??? Sea Creature",
-            "??? Sea Creature",
+            "Water Hydra Sea Creature",
+            "Manta Ray Sea Creature",
+            "Flaming Worm Sea Creature",
             "Treasure Hunter XIX   Grants +1.8➜1.9 ⛃ Treasure Chance.",
             "+3 ❤ Health",
             "+80,000 Coins",
@@ -2730,9 +2730,9 @@
           "level": 20,
           "totalExpRequired": 522425,
           "unlocks": [
-            "??? Sea Creature",
-            "??? Sea Creature",
-            "??? Sea Creature",
+            "Alligator Sea Creature",
+            "Lava Blaze Sea Creature",
+            "The Loch Emperor Sea Creature",
             "Treasure Hunter XX   Grants +1.9➜2 ⛃ Treasure Chance.",
             "+4 ❤ Health",
             "+100,000 Coins",
