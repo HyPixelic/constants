@@ -1,7 +1,7 @@
 {
   "success": true,
-  "lastUpdated": 1783294112142,
-  "version": "0.25.0.53",
+  "lastUpdated": 1783420234910,
+  "version": "0.25.0.55",
   "skills": {
     "FARMING": {
       "name": "Farming",
@@ -2743,7 +2743,7 @@
           "level": 21,
           "totalExpRequired": 822425,
           "unlocks": [
-            "??? Sea Creature",
+            "Phantom Fisher Sea Creature",
             "Treasure Hunter XXI   Grants +2➜2.1 ⛃ Treasure Chance.",
             "+4 ❤ Health",
             "+125,000 Coins",
@@ -2754,8 +2754,8 @@
           "level": 22,
           "totalExpRequired": 1222425,
           "unlocks": [
-            "??? Sea Creature",
-            "??? Sea Creature",
+            "Lava Pigman Sea Creature",
+            "Fireproof Witch Sea Creature",
             "Treasure Hunter XXII   Grants +2.1➜2.2 ⛃ Treasure Chance.",
             "+4 ❤ Health",
             "+150,000 Coins",
@@ -2776,8 +2776,8 @@
           "level": 24,
           "totalExpRequired": 2322425,
           "unlocks": [
-            "??? Sea Creature",
-            "??? Sea Creature",
+            "Abyssal Miner Sea Creature",
+            "Great White Shark Sea Creature",
             "Treasure Hunter XXIV   Grants +2.3➜2.4 ⛃ Treasure Chance.",
             "+4 ❤ Health",
             "+200,000 Coins",
@@ -2788,8 +2788,8 @@
           "level": 25,
           "totalExpRequired": 3022425,
           "unlocks": [
-            "??? Sea Creature",
-            "??? Sea Creature",
+            "Yeti Sea Creature",
+            "Nessie Sea Creature",
             "Treasure Hunter XXV   Grants +2.4➜2.5 ⛃ Treasure Chance.",
             "+4 ❤ Health",
             "+225,000 Coins",
@@ -2800,7 +2800,7 @@
           "level": 26,
           "totalExpRequired": 3822425,
           "unlocks": [
-            "??? Sea Creature",
+            "Grim Reaper Sea Creature",
             "Treasure Hunter XXVI   Grants +2.5➜2.6 ⛃ Treasure Chance.",
             "+5 ❤ Health",
             "+250,000 Coins",
@@ -2811,7 +2811,7 @@
           "level": 27,
           "totalExpRequired": 4722425,
           "unlocks": [
-            "??? Sea Creature",
+            "Magma Slug Sea Creature",
             "Treasure Hunter XXVII   Grants +2.6➜2.7 ⛃ Treasure Chance.",
             "+5 ❤ Health",
             "+275,000 Coins",
@@ -2822,8 +2822,8 @@
           "level": 28,
           "totalExpRequired": 5722425,
           "unlocks": [
-            "??? Sea Creature",
-            "??? Sea Creature",
+            "Nutcracker Sea Creature",
+            "Moogma Sea Creature",
             "Treasure Hunter XXVIII   Grants +2.7➜2.8 ⛃ Treasure Chance.",
             "+5 ❤ Health",
             "+300,000 Coins",
