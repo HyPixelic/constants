@@ -238,6 +238,20 @@ await fetchResources();
 setInterval(
   async () => {
     await fetchResources();
+
+    for (const [skillKey, skillInfo] of Object.entries(constants.SKYBLOCK_SKILLS)) {
+      constants.SKYBLOCK_SKILLS_LEVEL_CAPS[skillKey] = (skillInfo as any).maxLevel;
+      const xpMap: SKYBLOCK_SKILLS_LEVELING_XP_MAP = {};
+      let previousTotalExp = 0;
+
+      for (const levelData of (skillInfo as any).levels) {
+        const xpRequiredForThisLevel = levelData.totalExpRequired - previousTotalExp;
+        xpMap[levelData.level] = xpRequiredForThisLevel;
+        previousTotalExp = levelData.totalExpRequired;
+      }
+
+      constants.SKYBLOCK_SKILLS_LEVELING_XP[skillKey] = xpMap;
+    }
   },
   24 * 60 * 60 * 1000,
 );
@@ -256,19 +270,5 @@ setInterval(
  * ```
  */
 export const updateConstants = fetchResources;
-
-for (const [skillKey, skillInfo] of Object.entries(constants.SKYBLOCK_SKILLS)) {
-  constants.SKYBLOCK_SKILLS_LEVEL_CAPS[skillKey] = (skillInfo as any).maxLevel;
-  const xpMap: SKYBLOCK_SKILLS_LEVELING_XP_MAP = {};
-  let previousTotalExp = 0;
-
-  for (const levelData of (skillInfo as any).levels) {
-    const xpRequiredForThisLevel = levelData.totalExpRequired - previousTotalExp;
-    xpMap[levelData.level] = xpRequiredForThisLevel;
-    previousTotalExp = levelData.totalExpRequired;
-  }
-
-  constants.SKYBLOCK_SKILLS_LEVELING_XP[skillKey] = xpMap;
-}
 
 export default constants;
