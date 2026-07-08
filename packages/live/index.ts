@@ -156,7 +156,8 @@ type Constant =
   | "SKYBLOCK_DUNGEON_SKILLS"
   | "SKYBLOCK_DUNGEON_LEVEL_CAPS"
   | "SKYBLOCK_SLAYER_LEVEL_XP"
-  | "SKYBLOCK_SLAYER_LEVEL_CAPS";
+  | "SKYBLOCK_SLAYER_LEVEL_CAPS"
+  | "SKYBLOCK_RESOURCEPACKS";
 
 /**
  * Object containing a list of key-value pairs representing the Hypixel Constants.
@@ -215,6 +216,7 @@ const resources: Record<
   SKYBLOCK_COLLECTIONS: ["https://api.hypixel.net/v2/resources/skyblock/collections", "collections"],
   SKYBLOCK_ITEMS: ["https://api.hypixel.net/v2/resources/skyblock/items", "items"],
   SKYBLOCK_SKILLS: ["https://api.hypixel.net/v2/resources/skyblock/skills", "skills"],
+  SKYBLOCK_RESOURCEPACKS: ["https://api.hypixel.net/v2/resources/packs", "packs"],
 };
 
 const fetchResources = async (): Promise<void> => {

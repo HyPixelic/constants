@@ -9,6 +9,7 @@ import VANITY_COMPANIONS from "./constants/vanityCompanions.json" with { type: "
 import SKYBLOCK_COLLECTIONS from "./constants/skyblock/collections.json" with { type: "json" };
 import SKYBLOCK_ITEMS from "./constants/skyblock/items.json" with { type: "json" };
 import SKYBLOCK_SKILLS from "./constants/skyblock/skills.json" with { type: "json" };
+import SKYBLOCK_RESOURCEPACKS from "./constants/skyblock/resourcepacks.json" with { type: "json" };
 
 type SKYBLOCK_SKILLS_LEVELING_XP_MAP = Record<number, number>;
 type SKYBLOCK_SKILLS_LEVELING_XP = Record<string, SKYBLOCK_SKILLS_LEVELING_XP_MAP>;
@@ -168,7 +169,8 @@ type Constant =
   | "SKYBLOCK_DUNGEON_SKILLS"
   | "SKYBLOCK_DUNGEON_LEVEL_CAPS"
   | "SKYBLOCK_SLAYER_LEVEL_XP"
-  | "SKYBLOCK_SLAYER_LEVEL_CAPS";
+  | "SKYBLOCK_SLAYER_LEVEL_CAPS"
+  | "SKYBLOCK_RESOURCEPACKS";
 
 /**
  * Object containing a list of key-value pairs representing the Hypixel Constants.
@@ -217,6 +219,7 @@ const constants: Record<
   SKYBLOCK_DUNGEON_LEVEL_CAPS,
   SKYBLOCK_SLAYER_LEVEL_XP,
   SKYBLOCK_SLAYER_LEVEL_CAPS,
+  SKYBLOCK_RESOURCEPACKS,
 };
 
 const objectMap: Record<
@@ -242,6 +245,7 @@ const objectMap: Record<
   SKYBLOCK_COLLECTIONS: "collections",
   SKYBLOCK_ITEMS: "items",
   SKYBLOCK_SKILLS: "skills",
+  SKYBLOCK_RESOURCEPACKS: "packs",
 };
 
 for (const [key, value] of Object.entries(objectMap) as [Constant, null | string][]) {

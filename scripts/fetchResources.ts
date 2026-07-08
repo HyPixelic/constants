@@ -89,6 +89,11 @@ await Promise.all([
     "https://api.hypixel.net/v2/resources/skyblock/skills",
     resolve(process.cwd(), "../packages/static/constants/skyblock/skills.json"),
   ),
+  fetchResource(
+    "Resourcepacks",
+    "https://api.hypixel.net/v2/resources/packs",
+    resolve(process.cwd(), "../packages/static/constants/skyblock/resourcepacks.json"),
+  ),
 ]);
 
 if (changed) {
