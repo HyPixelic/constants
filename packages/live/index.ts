@@ -1,4 +1,4 @@
-type HYPIXELIC_CONSTANTS_INTERVALS = "daily" | "weekly" | "monthly" | number;
+export type HYPIXELIC_CONSTANTS_INTERVALS = "daily" | "weekly" | "monthly" | number;
 
 type SKYBLOCK_SKILLS_LEVELING_XP_MAP = Record<number, number>;
 type SKYBLOCK_SKILLS_LEVELING_XP = Record<string, SKYBLOCK_SKILLS_LEVELING_XP_MAP>;
