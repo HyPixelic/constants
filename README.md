@@ -9,9 +9,11 @@ A monorepo containing a collection of Hypixel Constants used by other HyPixelic 
 [`bun`](https://bun.sh/) » `bunx jsr add @hypixelic/constants`
 
 ```ts
-import { GAMES } from "@hypixelic/constants";
+import Constants from "@hypixelic/constants";
 
-const games = GAMES;
+const constants = new Constants(["GAMES"]);
+
+const games = constants.GAMES;
 ```
 
 [`npm`](https://npmjs.com/) » `npx jsr add @hypixelic/static-constants`<br/>
