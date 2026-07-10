@@ -152,7 +152,7 @@ const SKYBLOCK_SLAYER_LEVEL_CAPS: Record<string, number> = {
 /**
  * Type containing all possible keys for the Constants Object.
  */
-type Constant =
+export type Constant =
   | "LAST_UPDATED"
   | "GAMES"
   | "ACHIEVEMENTS"
@@ -173,68 +173,20 @@ type Constant =
   | "SKYBLOCK_RESOURCEPACKS";
 
 /**
- * Object containing a list of key-value pairs representing the Hypixel Constants.
- *
- * @example
- *
- * ```ts
- * import constants from '@hypixelic/constants'
- *
- * const gameModes = constants.GAMES
- * ```
+ * Type containing all possible keys for the Constants that can be fetched live.
  */
-const constants: Record<
-  Exclude<
-    Constant,
-    | "SKYBLOCK_SKILLS_LEVELING_XP"
-    | "SKYBLOCK_SKILLS_LEVEL_CAPS"
-    | "SKYBLOCK_DUNGEON_SKILLS"
-    | "SKYBLOCK_DUNGEON_LEVEL_CAPS"
-    | "SKYBLOCK_SLAYER_LEVEL_XP"
-    | "SKYBLOCK_SLAYER_LEVEL_CAPS"
-  >,
-  any
-> & {
-  SKYBLOCK_SKILLS_LEVELING_XP: SKYBLOCK_SKILLS_LEVELING_XP;
-  SKYBLOCK_SKILLS_LEVEL_CAPS: SKYBLOCK_SKILLS_LEVEL_CAPS;
-  SKYBLOCK_DUNGEON_SKILLS: typeof SKYBLOCK_DUNGEON_SKILLS;
-  SKYBLOCK_DUNGEON_LEVEL_CAPS: typeof SKYBLOCK_DUNGEON_LEVEL_CAPS;
-  SKYBLOCK_SLAYER_LEVEL_XP: typeof SKYBLOCK_SLAYER_LEVEL_XP;
-  SKYBLOCK_SLAYER_LEVEL_CAPS: typeof SKYBLOCK_SLAYER_LEVEL_CAPS;
-} = {
-  LAST_UPDATED: LAST_UPDATED[0],
-  GAMES,
-  ACHIEVEMENTS,
-  GUILD_ACHIEVEMENTS,
-  QUESTS,
-  CHALLENGES,
-  VANITY_PETS,
-  VANITY_COMPANIONS,
-  SKYBLOCK_COLLECTIONS,
-  SKYBLOCK_ITEMS,
-  SKYBLOCK_SKILLS,
-  SKYBLOCK_SKILLS_LEVELING_XP: {},
-  SKYBLOCK_SKILLS_LEVEL_CAPS: {},
-  SKYBLOCK_DUNGEON_SKILLS,
-  SKYBLOCK_DUNGEON_LEVEL_CAPS,
-  SKYBLOCK_SLAYER_LEVEL_XP,
-  SKYBLOCK_SLAYER_LEVEL_CAPS,
-  SKYBLOCK_RESOURCEPACKS,
-};
+export type ImportableConstant = Exclude<
+  Constant,
+  | "LAST_UPDATED"
+  | "SKYBLOCK_SKILLS_LEVELING_XP"
+  | "SKYBLOCK_SKILLS_LEVEL_CAPS"
+  | "SKYBLOCK_DUNGEON_SKILLS"
+  | "SKYBLOCK_DUNGEON_LEVEL_CAPS"
+  | "SKYBLOCK_SLAYER_LEVEL_XP"
+  | "SKYBLOCK_SLAYER_LEVEL_CAPS"
+>;
 
-const objectMap: Record<
-  Exclude<
-    Constant,
-    | "LAST_UPDATED"
-    | "SKYBLOCK_SKILLS_LEVELING_XP"
-    | "SKYBLOCK_SKILLS_LEVEL_CAPS"
-    | "SKYBLOCK_DUNGEON_SKILLS"
-    | "SKYBLOCK_DUNGEON_LEVEL_CAPS"
-    | "SKYBLOCK_SLAYER_LEVEL_XP"
-    | "SKYBLOCK_SLAYER_LEVEL_CAPS"
-  >,
-  null | string
-> = {
+const objectMap: Record<ImportableConstant, null | string> = {
   GAMES: "games",
   ACHIEVEMENTS: "achievements",
   GUILD_ACHIEVEMENTS: null,
@@ -248,26 +200,79 @@ const objectMap: Record<
   SKYBLOCK_RESOURCEPACKS: "packs",
 };
 
-for (const [key, value] of Object.entries(objectMap) as [Constant, null | string][]) {
-  if (value) {
-    constants[key] = constants[key][value];
+/**
+ * @example
+ *
+ * ```ts
+ * import Constants from '@hypixelic/constants'
+ *
+ * const constants = new Constants(['GAMES', 'SKYBLOCK_ITEMS'])
+ *
+ * console.log(constants.GAMES)
+ * ```
+ */
+export default class Constants {
+  public LAST_UPDATED: string = LAST_UPDATED[0];
+  public GAMES: any = {};
+  public ACHIEVEMENTS: any = {};
+  public GUILD_ACHIEVEMENTS: any = {};
+  public QUESTS: any = {};
+  public CHALLENGES: any = {};
+  public VANITY_PETS: any = {};
+  public VANITY_COMPANIONS: any = {};
+  public SKYBLOCK_COLLECTIONS: any = {};
+  public SKYBLOCK_ITEMS: any = {};
+  public SKYBLOCK_SKILLS: any = {};
+  public SKYBLOCK_SKILLS_LEVELING_XP: SKYBLOCK_SKILLS_LEVELING_XP = {};
+  public SKYBLOCK_SKILLS_LEVEL_CAPS: SKYBLOCK_SKILLS_LEVEL_CAPS = {};
+  public SKYBLOCK_DUNGEON_SKILLS = SKYBLOCK_DUNGEON_SKILLS;
+  public SKYBLOCK_DUNGEON_LEVEL_CAPS = SKYBLOCK_DUNGEON_LEVEL_CAPS;
+  public SKYBLOCK_SLAYER_LEVEL_XP = SKYBLOCK_SLAYER_LEVEL_XP;
+  public SKYBLOCK_SLAYER_LEVEL_CAPS = SKYBLOCK_SLAYER_LEVEL_CAPS;
+  public SKYBLOCK_RESOURCEPACKS: any = {};
+
+  private resourcesToInclude: ImportableConstant[];
+
+  constructor(include?: ImportableConstant[]) {
+    this.resourcesToInclude = include || (Object.keys(objectMap) as ImportableConstant[]);
+
+    const data: Record<string, any> = {
+      GAMES,
+      ACHIEVEMENTS,
+      GUILD_ACHIEVEMENTS,
+      QUESTS,
+      CHALLENGES,
+      VANITY_PETS,
+      VANITY_COMPANIONS,
+      SKYBLOCK_COLLECTIONS,
+      SKYBLOCK_ITEMS,
+      SKYBLOCK_SKILLS,
+      SKYBLOCK_RESOURCEPACKS,
+    };
+
+    for (const key of this.resourcesToInclude) {
+      const subKey = objectMap[key];
+      if (subKey === undefined) continue;
+
+      this[key] = subKey ? data[key][subKey] : data[key];
+      delete this[key]["success"];
+      delete this[key]["lastUpdated"];
+    }
+
+    if (this.resourcesToInclude.includes("SKYBLOCK_SKILLS") && Object.keys(this.SKYBLOCK_SKILLS).length > 0) {
+      for (const [skillKey, skillInfo] of Object.entries(this.SKYBLOCK_SKILLS)) {
+        this.SKYBLOCK_SKILLS_LEVEL_CAPS[skillKey] = (skillInfo as any).maxLevel;
+        const xpMap: SKYBLOCK_SKILLS_LEVELING_XP_MAP = {};
+        let previousTotalExp = 0;
+
+        for (const levelData of (skillInfo as any).levels) {
+          const xpRequiredForThisLevel = levelData.totalExpRequired - previousTotalExp;
+          xpMap[levelData.level] = xpRequiredForThisLevel;
+          previousTotalExp = levelData.totalExpRequired;
+        }
+
+        this.SKYBLOCK_SKILLS_LEVELING_XP[skillKey] = xpMap;
+      }
+    }
   }
-  delete constants[key]["success"];
-  delete constants[key]["lastUpdated"];
 }
-
-for (const [skillKey, skillInfo] of Object.entries(constants.SKYBLOCK_SKILLS)) {
-  constants.SKYBLOCK_SKILLS_LEVEL_CAPS[skillKey] = (skillInfo as any).maxLevel;
-  const xpMap: SKYBLOCK_SKILLS_LEVELING_XP_MAP = {};
-  let previousTotalExp = 0;
-
-  for (const levelData of (skillInfo as any).levels) {
-    const xpRequiredForThisLevel = levelData.totalExpRequired - previousTotalExp;
-    xpMap[levelData.level] = xpRequiredForThisLevel;
-    previousTotalExp = levelData.totalExpRequired;
-  }
-
-  constants.SKYBLOCK_SKILLS_LEVELING_XP[skillKey] = xpMap;
-}
-
-export default constants;

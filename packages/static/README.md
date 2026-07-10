@@ -10,7 +10,9 @@
 [`bun`](https://bun.sh/) » `bunx jsr add @hypixelic/static-constants`
 
 ```TS
-import { GAMES } from "@hypixelic/static-constants"
+import Constants from "@hypixelic/static-constants"
 
-const games = GAMES
+const constants = new Constants(["GAMES"])
+
+const games = constants.GAMES
 ```
