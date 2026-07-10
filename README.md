@@ -21,9 +21,11 @@ const games = constants.GAMES;
 [`bun`](https://bun.sh/) » `bunx jsr add @hypixelic/static-constants`
 
 ```ts
-import { GAMES } from "@hypixelic/static-constants";
+import Constants from "@hypixelic/static-constants";
 
-const games = GAMES;
+const constants = new Constants(["GAMES"]);
+
+const games = constants.GAMES;
 ```
 
 ## 📦 Packages
