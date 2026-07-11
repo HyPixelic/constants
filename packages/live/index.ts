@@ -1,3 +1,16 @@
+/**
+ * Union of all possible intervals for updating the constants automatically.
+ *
+ * @example
+ *
+ * ```ts
+ * import Constants from '@hypixelic/constants'
+ *
+ * const constants = new Constants(['GAMES', 'SKYBLOCK_ITEMS'])
+ * await constants.init()
+ * await constants.setInterval("daily")
+ * ```
+ */
 export type HYPIXELIC_CONSTANTS_INTERVALS = "daily" | "weekly" | "monthly" | number;
 
 type SKYBLOCK_SKILLS_LEVELING_XP_MAP = Record<number, number>;
@@ -199,6 +212,7 @@ const resources: Record<FetchableConstant, Resource> = {
  * import Constants from '@hypixelic/constants'
  *
  * const constants = new Constants(['GAMES', 'SKYBLOCK_ITEMS'])
+ * await constants.init()
  *
  * console.log(constants.GAMES)
  * ```
@@ -227,6 +241,16 @@ export default class Constants {
 
   constructor(live?: FetchableConstant[]) {
     this.resourcesToFetch = live || (Object.keys(resources) as FetchableConstant[]);
+  }
+
+  /**
+   * Initializes the constants by fetching the latest data from the Hypixel API.
+   *
+   * Redundant with `Constants.update()`, but added for convenience.
+   *
+   */
+  public async init(): Promise<void> {
+    return await this.update();
   }
 
   /**
