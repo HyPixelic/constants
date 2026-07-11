@@ -9,7 +9,7 @@ import VANITY_COMPANIONS from "./constants/vanityCompanions.json" with { type: "
 import SKYBLOCK_COLLECTIONS from "./constants/skyblock/collections.json" with { type: "json" };
 import SKYBLOCK_ITEMS from "./constants/skyblock/items.json" with { type: "json" };
 import SKYBLOCK_SKILLS from "./constants/skyblock/skills.json" with { type: "json" };
-import SKYBLOCK_RESOURCEPACKS from "./constants/skyblock/resourcepacks.json" with { type: "json" };
+import RESOURCEPACKS from "./constants/resourcepacks.json" with { type: "json" };
 
 type SKYBLOCK_SKILLS_LEVELING_XP_MAP = Record<number, number>;
 type SKYBLOCK_SKILLS_LEVELING_XP = Record<string, SKYBLOCK_SKILLS_LEVELING_XP_MAP>;
@@ -170,7 +170,7 @@ export type Constant =
   | "SKYBLOCK_DUNGEON_LEVEL_CAPS"
   | "SKYBLOCK_SLAYER_LEVEL_XP"
   | "SKYBLOCK_SLAYER_LEVEL_CAPS"
-  | "SKYBLOCK_RESOURCEPACKS";
+  | "RESOURCEPACKS";
 
 /**
  * Type containing all possible keys for the Constants that can be fetched live.
@@ -197,7 +197,7 @@ const objectMap: Record<ImportableConstant, null | string> = {
   SKYBLOCK_COLLECTIONS: "collections",
   SKYBLOCK_ITEMS: "items",
   SKYBLOCK_SKILLS: "skills",
-  SKYBLOCK_RESOURCEPACKS: "packs",
+  RESOURCEPACKS: "packs",
 };
 
 /**
@@ -229,7 +229,7 @@ export default class Constants {
   public SKYBLOCK_DUNGEON_LEVEL_CAPS = SKYBLOCK_DUNGEON_LEVEL_CAPS;
   public SKYBLOCK_SLAYER_LEVEL_XP = SKYBLOCK_SLAYER_LEVEL_XP;
   public SKYBLOCK_SLAYER_LEVEL_CAPS = SKYBLOCK_SLAYER_LEVEL_CAPS;
-  public SKYBLOCK_RESOURCEPACKS: any = {};
+  public RESOURCEPACKS: any = {};
 
   private resourcesToInclude: ImportableConstant[];
 
@@ -247,7 +247,7 @@ export default class Constants {
       SKYBLOCK_COLLECTIONS,
       SKYBLOCK_ITEMS,
       SKYBLOCK_SKILLS,
-      SKYBLOCK_RESOURCEPACKS,
+      RESOURCEPACKS,
     };
 
     for (const key of this.resourcesToInclude) {

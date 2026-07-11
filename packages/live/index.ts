@@ -172,7 +172,7 @@ export type Constant =
   | "SKYBLOCK_DUNGEON_LEVEL_CAPS"
   | "SKYBLOCK_SLAYER_LEVEL_XP"
   | "SKYBLOCK_SLAYER_LEVEL_CAPS"
-  | "SKYBLOCK_RESOURCEPACKS";
+  | "RESOURCEPACKS";
 
 /**
  * Type containing all possible keys for the Constants that can be fetched live.
@@ -201,7 +201,7 @@ const resources: Record<FetchableConstant, Resource> = {
   SKYBLOCK_COLLECTIONS: ["https://api.hypixel.net/v2/resources/skyblock/collections", "collections"],
   SKYBLOCK_ITEMS: ["https://api.hypixel.net/v2/resources/skyblock/items", "items"],
   SKYBLOCK_SKILLS: ["https://api.hypixel.net/v2/resources/skyblock/skills", "skills"],
-  SKYBLOCK_RESOURCEPACKS: ["https://api.hypixel.net/v2/resources/packs", "packs"],
+  RESOURCEPACKS: ["https://api.hypixel.net/v2/resources/packs", "packs"],
 };
 
 /**
@@ -235,7 +235,7 @@ export default class Constants {
   public SKYBLOCK_DUNGEON_LEVEL_CAPS = SKYBLOCK_DUNGEON_LEVEL_CAPS;
   public SKYBLOCK_SLAYER_LEVEL_XP = SKYBLOCK_SLAYER_LEVEL_XP;
   public SKYBLOCK_SLAYER_LEVEL_CAPS = SKYBLOCK_SLAYER_LEVEL_CAPS;
-  public SKYBLOCK_RESOURCEPACKS: any = {};
+  public RESOURCEPACKS: any = {};
 
   private resourcesToFetch: FetchableConstant[];
 
