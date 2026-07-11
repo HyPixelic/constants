@@ -1,3 +1,5 @@
+import JSR from "./jsr.json" with { type: "json" };
+
 /**
  * Union of all possible intervals for updating the constants automatically.
  *
@@ -264,14 +266,19 @@ export default class Constants {
    * ```
    */
   public async update(): Promise<void> {
+    const headers = {
+      "User-Agent": `hypixelic-constants/${JSR.version} (https://jsr.io/@hypixelic/constants)`,
+      Accept: "application/json",
+    };
+
     for (const key of this.resourcesToFetch) {
       const value = resources[key];
 
       try {
         if (Array.isArray(value)) {
-          this[key] = (await (await fetch(value[0])).json())[value[1]];
+          this[key] = (await (await fetch(value[0], { headers })).json())[value[1]];
         } else {
-          this[key] = await (await fetch(value)).json();
+          this[key] = await (await fetch(value, { headers })).json();
         }
         delete this[key]["success"];
         delete this[key]["lastUpdated"];
