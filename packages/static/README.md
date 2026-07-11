@@ -16,3 +16,6 @@ const constants = new Constants(["GAMES"])
 
 const games = constants.GAMES
 ```
+
+> [!NOTE]
+> This project is not affiliated with or endorsed by [Hypixel, Inc.](https://hypixel.net/)
