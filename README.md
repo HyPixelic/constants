@@ -12,6 +12,9 @@ A monorepo containing a collection of Hypixel Constants used by other HyPixelic 
 import Constants from "@hypixelic/constants";
 
 const constants = new Constants(["GAMES"]);
+await constants.init();
+/* Optionally set an interval to automatically update the constants every 24 hours */
+await constants.setInterval("daily");
 
 const games = constants.GAMES;
 ```
