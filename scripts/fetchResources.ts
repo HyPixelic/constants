@@ -15,7 +15,12 @@ async function fetchResource(name: string, url: string, destPath: string) {
     if (existsSync(destPath)) {
       const existingData = JSON.parse(readFileSync(destPath, "utf8"));
 
-      if (existingData.lastUpdated && newData.lastUpdated) {
+      if (name === "Resourcepacks") {
+        if (JSON.stringify(existingData) === JSON.stringify(newData)) {
+          logger.info(`Fetch${name}`, `${name} are already up to date.`);
+          return;
+        }
+      } else if (existingData.lastUpdated && newData.lastUpdated) {
         if (existingData.lastUpdated === newData.lastUpdated) {
           logger.info(`Fetch${name}`, `${name} are already up to date.`);
           return;
@@ -92,7 +97,7 @@ await Promise.all([
   fetchResource(
     "Resourcepacks",
     "https://api.hypixel.net/v2/resources/packs",
-    resolve(process.cwd(), "../packages/static/constants/skyblock/resourcepacks.json"),
+    resolve(process.cwd(), "../packages/static/constants/resourcepacks.json"),
   ),
 ]);
 
