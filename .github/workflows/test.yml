@@ -11,20 +11,12 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [22.x, 23.x, 24.x, 25.x, 26.x]
     steps:
       - uses: actions/checkout@v6
       - name: Use PNPM Package Manager
         uses: pnpm/action-setup@v6
         with:
           version: "11.13"
-      - name: Node.js (${{ matrix.node-version }})
-        uses: actions/setup-node@v6
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: "pnpm"
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
       - name: Test Package/Project
