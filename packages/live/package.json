@@ -7,8 +7,8 @@
   },
   "type": "module",
   "scripts": {
-    "prettier:check": "pnpm dlx prettier . --check",
-    "prettier:write": "pnpm dlx prettier . --write"
+    "prettier:check": "pnpm dlx prettier --config ../../.prettierrc --ignore-path ../../.prettierignore .. --check",
+    "prettier:write": "pnpm dlx prettier --config ../../.prettierrc --ignore-path ../../.prettierignore .. --write"
   },
   "devDependencies": {
     "typescript": "^6.0.3"
