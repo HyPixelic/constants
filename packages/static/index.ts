@@ -204,7 +204,7 @@ const objectMap: Record<ImportableConstant, null | string> = {
  * @example
  *
  * ```ts
- * import Constants from '@hypixelic/constants'
+ * import Constants from '@hypixelic/static-constants'
  *
  * const constants = new Constants(['GAMES', 'SKYBLOCK_ITEMS'])
  *
