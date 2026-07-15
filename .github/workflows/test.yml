@@ -16,7 +16,7 @@ jobs:
       - name: Use PNPM Package Manager
         uses: pnpm/action-setup@v6
         with:
-          version: "11.13"
+          version: 11
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
       - name: Test Package/Project
