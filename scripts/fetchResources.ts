@@ -30,63 +30,26 @@ async function fetchResource(name: string, url: string, destPath: string) {
   }
 }
 
+const BASE_URL = "https://api.hypixel.net/v2/resources";
+const BASE_PATH = resolve(import.meta.dirname, "../packages/static/constants");
+
 const resources = [
-  {
-    name: "Games",
-    url: "https://api.hypixel.net/v2/resources/games",
-    path: resolve(process.cwd(), "../packages/static/constants/games.json"),
-  },
-  {
-    name: "Achievements",
-    url: "https://api.hypixel.net/v2/resources/achievements",
-    path: resolve(process.cwd(), "../packages/static/constants/achievements.json"),
-  },
-  {
-    name: "Challenges",
-    url: "https://api.hypixel.net/v2/resources/challenges",
-    path: resolve(process.cwd(), "../packages/static/constants/challenges.json"),
-  },
-  {
-    name: "Quests",
-    url: "https://api.hypixel.net/v2/resources/quests",
-    path: resolve(process.cwd(), "../packages/static/constants/quests.json"),
-  },
-  {
-    name: "GuildAchievements",
-    url: "https://api.hypixel.net/v2/resources/guilds/achievements",
-    path: resolve(process.cwd(), "../packages/static/constants/guildAchievements.json"),
-  },
-  {
-    name: "VanityPets",
-    url: "https://api.hypixel.net/v2/resources/vanity/pets",
-    path: resolve(process.cwd(), "../packages/static/constants/vanityPets.json"),
-  },
-  {
-    name: "VanityCompanions",
-    url: "https://api.hypixel.net/v2/resources/vanity/companions",
-    path: resolve(process.cwd(), "../packages/static/constants/vanityCompanions.json"),
-  },
-  {
-    name: "Collections",
-    url: "https://api.hypixel.net/v2/resources/skyblock/collections",
-    path: resolve(process.cwd(), "../packages/static/constants/skyblock/collections.json"),
-  },
-  {
-    name: "Items",
-    url: "https://api.hypixel.net/v2/resources/skyblock/items",
-    path: resolve(process.cwd(), "../packages/static/constants/skyblock/items.json"),
-  },
-  {
-    name: "Skills",
-    url: "https://api.hypixel.net/v2/resources/skyblock/skills",
-    path: resolve(process.cwd(), "../packages/static/constants/skyblock/skills.json"),
-  },
-  {
-    name: "Resourcepacks",
-    url: "https://api.hypixel.net/v2/resources/packs",
-    path: resolve(process.cwd(), "../packages/static/constants/resourcepacks.json"),
-  },
-];
+  { name: "Games", endpoint: "/games", file: "games.json" },
+  { name: "Achievements", endpoint: "/achievements", file: "achievements.json" },
+  { name: "Challenges", endpoint: "/challenges", file: "challenges.json" },
+  { name: "Quests", endpoint: "/quests", file: "quests.json" },
+  { name: "GuildAchievements", endpoint: "/guilds/achievements", file: "guildAchievements.json" },
+  { name: "VanityPets", endpoint: "/vanity/pets", file: "vanityPets.json" },
+  { name: "VanityCompanions", endpoint: "/vanity/companions", file: "vanityCompanions.json" },
+  { name: "Collections", endpoint: "/skyblock/collections", file: "skyblock/collections.json" },
+  { name: "Items", endpoint: "/skyblock/items", file: "skyblock/items.json" },
+  { name: "Skills", endpoint: "/skyblock/skills", file: "skyblock/skills.json" },
+  { name: "Resourcepacks", endpoint: "/packs", file: "resourcepacks.json" },
+].map((r) => ({
+  name: r.name,
+  url: `${BASE_URL}${r.endpoint}`,
+  path: resolve(BASE_PATH, r.file),
+}));
 
 const results = await Promise.all(resources.map((r) => fetchResource(r.name, r.url, r.path)));
 const changedResults = results.filter((r) => r.changed);
@@ -106,7 +69,7 @@ if (changedResults.length > 0) {
     logger.info(`Fetch${res.name}`, `Successfully updated ${fileName}!`);
   }
 
-  const lastUpdatedPath = resolve(process.cwd(), "../packages/static/constants/lastUpdated.json");
+  const lastUpdatedPath = resolve(BASE_PATH, "lastUpdated.json");
   writeFileSync(lastUpdatedPath, JSON.stringify([new Date().toJSON()], null, 2) + "\n", "utf8");
   execSync("pnpm tsx bumpVersion.ts", { stdio: "inherit" });
 }
