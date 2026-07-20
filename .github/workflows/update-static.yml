@@ -45,6 +45,4 @@ jobs:
         with:
           version: 11
       - run: pnpm install --frozen-lockfile
-      - run: pnpm dlx jsr publish --token $JSR_TOKEN
-        env:
-          JSR_TOKEN: ${{ secrets.JSR_TOKEN }}
+      - run: pnpm dlx jsr publish
