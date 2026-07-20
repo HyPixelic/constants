@@ -152,7 +152,7 @@ const SKYBLOCK_SLAYER_LEVEL_CAPS: Record<string, number> = {
 /**
  * Type containing all possible keys for the Constants Object.
  */
-export type Constant =
+export type HyPixelicConstant =
   | "LAST_UPDATED"
   | "GAMES"
   | "ACHIEVEMENTS"
@@ -175,8 +175,8 @@ export type Constant =
 /**
  * Type containing all possible keys for the Constants that can be fetched live.
  */
-export type ImportableConstant = Exclude<
-  Constant,
+export type HyPixelicImportableConstant = Exclude<
+  HyPixelicConstant,
   | "LAST_UPDATED"
   | "SKYBLOCK_SKILLS_LEVELING_XP"
   | "SKYBLOCK_SKILLS_LEVEL_CAPS"
@@ -186,7 +186,7 @@ export type ImportableConstant = Exclude<
   | "SKYBLOCK_SLAYER_LEVEL_CAPS"
 >;
 
-const objectMap: Record<ImportableConstant, null | string> = {
+const objectMap: Record<HyPixelicImportableConstant, null | string> = {
   GAMES: "games",
   ACHIEVEMENTS: "achievements",
   GUILD_ACHIEVEMENTS: null,
@@ -231,10 +231,10 @@ export default class Constants {
   public SKYBLOCK_SLAYER_LEVEL_CAPS = SKYBLOCK_SLAYER_LEVEL_CAPS;
   public RESOURCEPACKS: any = {};
 
-  private resourcesToInclude: ImportableConstant[];
+  private resourcesToInclude: HyPixelicImportableConstant[];
 
-  constructor(include?: ImportableConstant[]) {
-    this.resourcesToInclude = include || (Object.keys(objectMap) as ImportableConstant[]);
+  constructor(include?: HyPixelicImportableConstant[]) {
+    this.resourcesToInclude = include || (Object.keys(objectMap) as HyPixelicImportableConstant[]);
 
     const data: Record<string, any> = {
       GAMES,

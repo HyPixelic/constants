@@ -13,7 +13,7 @@ import JSR from "./jsr.json" with { type: "json" };
  * await constants.setInterval("daily")
  * ```
  */
-export type HYPIXELIC_CONSTANTS_INTERVALS = "daily" | "weekly" | "monthly" | number;
+export type HyPixelicConstantsIntervals = "daily" | "weekly" | "monthly" | number;
 
 type SKYBLOCK_SKILLS_LEVELING_XP_MAP = Record<number, number>;
 type SKYBLOCK_SKILLS_LEVELING_XP = Record<string, SKYBLOCK_SKILLS_LEVELING_XP_MAP>;
@@ -156,7 +156,7 @@ const SKYBLOCK_SLAYER_LEVEL_CAPS: Record<string, number> = {
 /**
  * Type containing all possible keys for the Constants Object.
  */
-export type Constant =
+export type HyPixelicConstant =
   | "LAST_UPDATED"
   | "GAMES"
   | "ACHIEVEMENTS"
@@ -179,8 +179,8 @@ export type Constant =
 /**
  * Type containing all possible keys for the Constants that can be fetched live.
  */
-export type FetchableConstant = Exclude<
-  Constant,
+export type HyPixelicFetchableConstant = Exclude<
+  HyPixelicConstant,
   | "LAST_UPDATED"
   | "SKYBLOCK_SKILLS_LEVELING_XP"
   | "SKYBLOCK_SKILLS_LEVEL_CAPS"
@@ -192,7 +192,7 @@ export type FetchableConstant = Exclude<
 
 type Resource = string | string[];
 
-const resources: Record<FetchableConstant, Resource> = {
+const resources: Record<HyPixelicFetchableConstant, Resource> = {
   GAMES: ["https://api.hypixel.net/v2/resources/games", "games"],
   ACHIEVEMENTS: ["https://api.hypixel.net/v2/resources/achievements", "achievements"],
   GUILD_ACHIEVEMENTS: "https://api.hypixel.net/v2/resources/guilds/achievements",
@@ -239,10 +239,10 @@ export default class Constants {
   public SKYBLOCK_SLAYER_LEVEL_CAPS = SKYBLOCK_SLAYER_LEVEL_CAPS;
   public RESOURCEPACKS: any = {};
 
-  private resourcesToFetch: FetchableConstant[];
+  private resourcesToFetch: HyPixelicFetchableConstant[];
 
-  constructor(live?: FetchableConstant[]) {
-    this.resourcesToFetch = live || (Object.keys(resources) as FetchableConstant[]);
+  constructor(live?: HyPixelicFetchableConstant[]) {
+    this.resourcesToFetch = live || (Object.keys(resources) as HyPixelicFetchableConstant[]);
   }
 
   /**
@@ -317,7 +317,7 @@ export default class Constants {
    * constants.setInterval(3600000); // Updates every hour (3600000 ms)
    * ```
    */
-  public setInterval(interval: HYPIXELIC_CONSTANTS_INTERVALS): void {
+  public setInterval(interval: HyPixelicConstantsIntervals): void {
     if (typeof interval === "string") {
       switch (interval) {
         case "daily":
