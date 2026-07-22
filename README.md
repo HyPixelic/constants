@@ -33,8 +33,10 @@ const games = constants.GAMES;
 
 ## 📦 Packages
 
-- `@hypixelic/constants` - Live Hypixel constants fetched from Hypixel resource endpoints.
-- `@hypixelic/static-constants` - Static snapshot of constants for offline or more reliable use.
+| Name                                                                        | Description                                                     | Version                                                       | Downloads                                                                       |
+|-----------------------------------------------------------------------------|-----------------------------------------------------------------|---------------------------------------------------------------|---------------------------------------------------------------------------------|
+| [`@hypixelic/constants`](https://jsr.io/@hypixelic/constants)               | Live Hypixel constants fetched from Hypixel resource endpoints. | ![Version](https://jsr.io/badges/@hypixelic/constants)        | ![Downloads](https://jsr.io/badges/@hypixelic/constants/total-downloads)        |
+| [`@hypixelic/static-constants`](https://jsr.io/@hypixelic/static-constants) | Static snapshot of constants for offline or more reliable use.  | ![Version](https://jsr.io/badges/@hypixelic/static-constants) | ![Downloads](https://jsr.io/badges/@hypixelic/static-constants/total-downloads) |
 
 ## 📁 Repository Structure
 
