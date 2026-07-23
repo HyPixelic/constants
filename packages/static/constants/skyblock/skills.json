@@ -1,6 +1,6 @@
 {
   "success": true,
-  "version": "0.26.0.14",
+  "version": "0.26.1.2",
   "skills": {
     "FARMING": {
       "name": "Farming",
@@ -902,6 +902,7 @@
             "Presumed Gallon of Red Paint Reforge",
             "Searing Stone Reforge",
             "Blaze Wax Reforge",
+            "Blooming Thorns Reforge",
             "Lucky Dice Reforge",
             "Burrowing Spores Reforge",
             "Shiny Prism Reforge",
@@ -2899,9 +2900,9 @@
           "level": 35,
           "totalExpRequired": 15522425,
           "unlocks": [
-            "Reindrake Sea Creature",
-            "Blue Ringed Octopus Sea Creature",
-            "Taurus Sea Creature",
+            "??? Sea Creature",
+            "??? Sea Creature",
+            "??? Sea Creature",
             "Treasure Hunter 35   Grants +3.4➜3.5  Treasure Chance.",
             "+5  Health",
             "+475,000 Coins",
@@ -2912,8 +2913,8 @@
           "level": 36,
           "totalExpRequired": 17322425,
           "unlocks": [
-            "Plhlegblast Sea Creature",
-            "Thunder Sea Creature",
+            "??? Sea Creature",
+            "??? Sea Creature",
             "Treasure Hunter 36   Grants +3.5➜3.6  Treasure Chance.",
             "+5  Health",
             "+500,000 Coins",
@@ -2924,7 +2925,7 @@
           "level": 37,
           "totalExpRequired": 19222425,
           "unlocks": [
-            "Fiery Scuttler Sea Creature",
+            "??? Sea Creature",
             "Treasure Hunter 37   Grants +3.6➜3.7  Treasure Chance.",
             "+5  Health",
             "+550,000 Coins",
@@ -2955,7 +2956,7 @@
           "level": 40,
           "totalExpRequired": 25522425,
           "unlocks": [
-            "Wiki Tiki Sea Creature",
+            "??? Sea Creature",
             "Treasure Hunter 40   Grants +3.9➜4  Treasure Chance.",
             "+5  Health",
             "+700,000 Coins",
@@ -3006,7 +3007,7 @@
           "level": 45,
           "totalExpRequired": 38072425,
           "unlocks": [
-            "Lord Jawbus Sea Creature",
+            "??? Sea Creature",
             "Treasure Hunter 45   Grants +4.4➜4.5  Treasure Chance.",
             "+5  Health",
             "+1,000,000 Coins",
@@ -3027,7 +3028,7 @@
           "level": 47,
           "totalExpRequired": 44072425,
           "unlocks": [
-            "Ragnarok Sea Creature",
+            "??? Sea Creature",
             "Treasure Hunter 47   Grants +4.6➜4.7  Treasure Chance.",
             "+5  Health",
             "+1,000,000 Coins",
@@ -3368,12 +3369,12 @@
             "Conjurer 22   Gain 105➜110% more experience orbs from any source.",
             "+0.5%  Ability Damage",
             "+2  Intelligence",
-            "Mana Vampire Enchantment",
-            "Hardened Mana Enchantment",
+            "Vampiric Vitality Enchantment",
+            "Hardened Vitality Enchantment",
             "Prismatic Enchantment",
             "Counter-Strike Enchantment",
-            "Ferocious Mana Enchantment",
-            "Strong Mana Enchantment",
+            "Vivacious Vitality Enchantment",
+            "Strong Vitality Enchantment",
             "Lapidary Enchantment",
             "+150,000 Coins",
             "+10 SkyBlock XP"
