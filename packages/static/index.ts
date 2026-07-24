@@ -11,6 +11,11 @@ import SKYBLOCK_ITEMS from "./constants/skyblock/items.json" with { type: "json"
 import SKYBLOCK_SKILLS from "./constants/skyblock/skills.json" with { type: "json" };
 import RESOURCEPACKS from "./constants/resourcepacks.json" with { type: "json" };
 
+const GUILD_LEVELING_XP: number[] = [
+  100000, 150000, 250000, 500000, 750000, 1000000, 1250000, 1500000, 2000000, 2500000, 2500000, 2500000, 2500000,
+  2500000, 3000000,
+];
+
 type SKYBLOCK_SKILLS_LEVELING_XP_MAP = Record<number, number>;
 type SKYBLOCK_SKILLS_LEVELING_XP = Record<string, SKYBLOCK_SKILLS_LEVELING_XP_MAP>;
 type SKYBLOCK_SKILLS_LEVEL_CAPS = Record<string, number>;
@@ -154,6 +159,7 @@ const SKYBLOCK_SLAYER_LEVEL_CAPS: Record<string, number> = {
  */
 export type HyPixelicConstant =
   | "LAST_UPDATED"
+  | "GUILD_LEVELING_XP"
   | "GAMES"
   | "ACHIEVEMENTS"
   | "GUILD_ACHIEVEMENTS"
@@ -178,6 +184,7 @@ export type HyPixelicConstant =
 export type HyPixelicImportableConstant = Exclude<
   HyPixelicConstant,
   | "LAST_UPDATED"
+  | "GUILD_LEVELING_XP"
   | "SKYBLOCK_SKILLS_LEVELING_XP"
   | "SKYBLOCK_SKILLS_LEVEL_CAPS"
   | "SKYBLOCK_DUNGEON_SKILLS"
@@ -213,6 +220,7 @@ const objectMap: Record<HyPixelicImportableConstant, null | string> = {
  */
 export default class Constants {
   public LAST_UPDATED: string = LAST_UPDATED[0];
+  public GUILD_LEVELING_XP = GUILD_LEVELING_XP;
   public GAMES: any = {};
   public ACHIEVEMENTS: any = {};
   public GUILD_ACHIEVEMENTS: any = {};
