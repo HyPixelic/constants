@@ -29,6 +29,7 @@ describe("Live Constants", function () {
       await constants.init();
       assert.ok(constants.LAST_UPDATED);
       assert.ok(Object.keys(constants.GAMES).length > 0);
+      assert.ok(constants.GUILD_LEVELING_XP.length > 0);
       assert.ok(Object.keys(constants.ACHIEVEMENTS).length > 0);
       assert.ok(Object.keys(constants.GUILD_ACHIEVEMENTS).length > 0);
       assert.ok(Object.keys(constants.QUESTS).length > 0);
