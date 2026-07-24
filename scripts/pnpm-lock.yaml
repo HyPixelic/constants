@@ -16,8 +16,8 @@ importers:
         version: 1.18.1
     devDependencies:
       '@types/node':
-        specifier: ^26.0.1
-        version: 26.0.1
+        specifier: ^26.1.0
+        version: 26.1.0
       tsx:
         specifier: ^4.22.4
         version: 4.22.4
@@ -186,8 +186,8 @@ packages:
   '@jsr/pixelic__logger@0.1.0':
     resolution: {integrity: sha512-RKOHzaoePq1qK7DwGg2sTg8gV2hh+NCV4CqpPPhUYFmhH5s2uOcsZOC9Alnp3iJCIKlPWNP4Xao5JdzKdC7xGw==, tarball: https://npm.jsr.io/~/11/@jsr/pixelic__logger/0.1.0.tgz}
 
-  '@types/node@26.0.1':
-    resolution: {integrity: sha512-fc3KiUoBt6kie0N9bIW3E47vZsuaMf0PM2AaUpLCLT0s/LvX1nxAim6Fc049cNxODPpGm6qRAuUOB86SkRuPQw==}
+  '@types/node@26.1.0':
+    resolution: {integrity: sha512-O0A1G3xPGy4w7AgQdAQYUlQ+BKk2Oovw8eRpofyp5KdBZULnbe+WqaOVNrm705SHphCiG4XHsACrSmPu1f+Kgw==}
 
   agent-base@6.0.2:
     resolution: {integrity: sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==}
@@ -414,7 +414,7 @@ snapshots:
     dependencies:
       chalk: 5.6.2
 
-  '@types/node@26.0.1':
+  '@types/node@26.1.0':
     dependencies:
       undici-types: 8.3.0
 
