@@ -11990,6 +11990,12 @@
           "gamePercentUnlocked": 0.4696085345682539,
           "globalPercentUnlocked": 0.22895456747375276
         },
+        "CLEANING_HOUSE": {
+          "points": 10,
+          "name": "Cleaning House",
+          "description": "???",
+          "secret": true
+        },
         "I_OWN_THIS_PLACE": {
           "points": 5,
           "name": "I own this place!",
@@ -12081,6 +12087,12 @@
           "description": "Mine a Living Metal Snake in the Rift",
           "gamePercentUnlocked": 1.6832870322388747,
           "globalPercentUnlocked": 0.8206755755722199
+        },
+        "WHAT_THE_FLIP": {
+          "points": 5,
+          "name": "What the flip?",
+          "description": "???",
+          "secret": true
         },
         "ROUGH_DEAL": {
           "points": 5,
@@ -12384,6 +12396,12 @@
           "description": "Open the Garden Time menu in The Garden",
           "gamePercentUnlocked": 1.704419542685059,
           "globalPercentUnlocked": 0.8309785927294548
+        },
+        "THE_MIRACLE_IN_A_SUNBEAM": {
+          "points": 15,
+          "name": "The Miracle in a Sunbeam",
+          "description": "???",
+          "secret": true
         },
         "RESPONSIBLE_PET_OWNER": {
           "points": 5,
@@ -13013,7 +13031,7 @@
         "HANDYMAN": {
           "points": 5,
           "name": "Handyman",
-          "description": "Tune the Beacon on Galatea",
+          "description": "Tune a Beacon on Galatea",
           "gamePercentUnlocked": 1.747822079091875,
           "globalPercentUnlocked": 0.8521392152880343
         },
@@ -13816,7 +13834,7 @@
           ]
         }
       },
-      "total_points": 3090,
+      "total_points": 3120,
       "total_legacy_points": 5
     },
     "skyclash": {
