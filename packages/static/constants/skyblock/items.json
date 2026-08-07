@@ -103728,7 +103728,6 @@
       "category": "LEGGINGS",
       "tier": "EPIC",
       "stats": {
-        "DEFENSE": -30,
         "HEALTH": 400,
         "CRITICAL_DAMAGE": 15
       },
@@ -103810,7 +103809,6 @@
       "category": "HELMET",
       "tier": "EPIC",
       "stats": {
-        "DEFENSE": -30,
         "HEALTH": 300,
         "INTELLIGENCE": 125,
         "CRITICAL_DAMAGE": 15
@@ -103888,7 +103886,6 @@
       "category": "BOOTS",
       "tier": "EPIC",
       "stats": {
-        "DEFENSE": -30,
         "HEALTH": 200,
         "INTELLIGENCE": 25,
         "CRITICAL_DAMAGE": 15
@@ -103966,7 +103963,6 @@
       "category": "CHESTPLATE",
       "tier": "EPIC",
       "stats": {
-        "DEFENSE": -30,
         "HEALTH": 500,
         "CRITICAL_DAMAGE": 15
       },
