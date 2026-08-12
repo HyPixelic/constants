@@ -1,6 +1,6 @@
 {
   "success": true,
-  "version": "0.27.0.9",
+  "version": "0.27.0.13",
   "skills": {
     "FARMING": {
       "name": "Farming",
@@ -2754,9 +2754,9 @@
           "level": 19,
           "totalExpRequired": 322425,
           "unlocks": [
-            "Water Hydra Sea Creature",
-            "Manta Ray Sea Creature",
-            "Flaming Worm Sea Creature",
+            "??? Sea Creature",
+            "??? Sea Creature",
+            "??? Sea Creature",
             "Treasure Hunter XIX   Grants +1.8➜1.9  Treasure Chance.",
             "+3  Health",
             "+80,000 Coins",
@@ -2767,9 +2767,9 @@
           "level": 20,
           "totalExpRequired": 522425,
           "unlocks": [
-            "Alligator Sea Creature",
-            "Lava Blaze Sea Creature",
-            "The Loch Emperor Sea Creature",
+            "??? Sea Creature",
+            "??? Sea Creature",
+            "??? Sea Creature",
             "Treasure Hunter XX   Grants +1.9➜2  Treasure Chance.",
             "+4  Health",
             "+100,000 Coins",
@@ -2780,7 +2780,7 @@
           "level": 21,
           "totalExpRequired": 822425,
           "unlocks": [
-            "Phantom Fisher Sea Creature",
+            "??? Sea Creature",
             "Treasure Hunter XXI   Grants +2➜2.1  Treasure Chance.",
             "+4  Health",
             "+125,000 Coins",

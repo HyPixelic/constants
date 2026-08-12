@@ -105227,7 +105227,7 @@
     {
       "material": "PAPER",
       "item_model": "hypixel_skyblock:item/boosters/uncommon/booster_luck_upgraded",
-      "name": "Uncommon Luck Booster",
+      "name": "Uncommon Luck Booster Upgrade",
       "category": "BOOSTER",
       "tier": "UNCOMMON",
       "id": "LUCK_BOOSTER_UNCOMMON"
@@ -105235,7 +105235,7 @@
     {
       "material": "PAPER",
       "item_model": "hypixel_skyblock:item/boosters/uncommon/booster_foraging_wisdom_upgraded",
-      "name": "Uncommon Foraging Wisdom Booster",
+      "name": "Uncommon Foraging Wisdom Booster Upgrade",
       "category": "BOOSTER",
       "tier": "UNCOMMON",
       "npc_sell_price": 25000,
@@ -105251,7 +105251,7 @@
     {
       "material": "PAPER",
       "item_model": "hypixel_skyblock:item/boosters/uncommon/booster_sweep_upgraded",
-      "name": "Uncommon Sweep Booster",
+      "name": "Uncommon Sweep Booster Upgrade",
       "category": "BOOSTER",
       "tier": "UNCOMMON",
       "npc_sell_price": 25000,
@@ -105267,7 +105267,7 @@
     {
       "material": "PAPER",
       "item_model": "hypixel_skyblock:item/boosters/uncommon/booster_foraging_fortune_upgraded",
-      "name": "Uncommon Foraging Fortune Booster",
+      "name": "Uncommon Foraging Fortune Booster Upgrade",
       "category": "BOOSTER",
       "tier": "UNCOMMON",
       "id": "FORAGING_FORTUNE_BOOSTER_UNCOMMON"
@@ -105275,7 +105275,7 @@
     {
       "material": "PAPER",
       "item_model": "hypixel_skyblock:item/boosters/uncommon/booster_fighting_upgraded",
-      "name": "Uncommon Fighting Booster",
+      "name": "Uncommon Fighting Booster Upgrade",
       "category": "BOOSTER",
       "tier": "UNCOMMON",
       "id": "FIGHTING_BOOSTER_UNCOMMON"
@@ -105283,7 +105283,7 @@
     {
       "material": "PAPER",
       "item_model": "hypixel_skyblock:item/boosters/uncommon/booster_hunting_wisdom_upgraded",
-      "name": "Uncommon Hunting Wisdom Booster",
+      "name": "Uncommon Hunting Wisdom Booster Upgrade",
       "category": "BOOSTER",
       "tier": "UNCOMMON",
       "id": "HUNTING_WISDOM_BOOSTER_UNCOMMON"
