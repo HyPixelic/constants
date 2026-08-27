@@ -1,6 +1,6 @@
 {
   "name": "@hypixelic/static-constants",
-  "version": "2026.8.25",
+  "version": "2026.8.27",
   "license": "MIT",
   "exports": "./index.ts",
   "publish": {
