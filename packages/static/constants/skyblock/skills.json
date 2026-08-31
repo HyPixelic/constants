@@ -1,6 +1,6 @@
 {
   "success": true,
-  "version": "0.27.0.24",
+  "version": "0.27.0.25",
   "skills": {
     "FARMING": {
       "name": "Farming",
@@ -2661,7 +2661,7 @@
           "level": 12,
           "totalExpRequired": 22425,
           "unlocks": [
-            "Ent Sea Creature",
+            "??? Sea Creature",
             "Treasure Hunter XII   Grants +1.1➜1.2  Treasure Chance.",
             "+2  Health",
             "+15,000 Coins",
