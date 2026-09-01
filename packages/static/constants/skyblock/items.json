@@ -19614,8 +19614,9 @@
       "item_model": "hypixel_skyblock:item/fishing/rod_part/sinker/festive_sinker",
       "name": "Festive Sinker",
       "category": "FISHING_ROD_PART",
-      "tier": "RARE",
+      "tier": "COMMON",
       "unstackable": true,
+      "force_wipe_recomb": true,
       "requirements": [
         {
           "type": "SKILL",
@@ -19635,8 +19636,9 @@
       "item_model": "hypixel_skyblock:item/fishing/rod_part/sinker/icy_sinker",
       "name": "Icy Sinker",
       "category": "FISHING_ROD_PART",
-      "tier": "RARE",
+      "tier": "COMMON",
       "unstackable": true,
+      "force_wipe_recomb": true,
       "npc_sell_price": 10000,
       "requirements": [
         {
@@ -19667,6 +19669,7 @@
       "category": "FISHING_ROD_PART",
       "tier": "RARE",
       "unstackable": true,
+      "force_wipe_recomb": true,
       "requirements": [
         {
           "type": "SKILL",
@@ -19686,8 +19689,9 @@
       "item_model": "hypixel_skyblock:item/fishing/rod_part/sinker/junk_sinker",
       "name": "Junk Sinker",
       "category": "FISHING_ROD_PART",
-      "tier": "RARE",
+      "tier": "UNCOMMON",
       "unstackable": true,
+      "force_wipe_recomb": true,
       "requirements": [
         {
           "type": "SKILL",
@@ -19707,8 +19711,9 @@
       "item_model": "hypixel_skyblock:item/fishing/rod_part/sinker/prismarine_sinker",
       "name": "Prismarine Sinker",
       "category": "FISHING_ROD_PART",
-      "tier": "RARE",
+      "tier": "COMMON",
       "unstackable": true,
+      "force_wipe_recomb": true,
       "requirements": [
         {
           "type": "SKILL",
@@ -19728,8 +19733,9 @@
       "item_model": "hypixel_skyblock:item/fishing/rod_part/sinker/chum_sinker",
       "name": "Chum Sinker",
       "category": "FISHING_ROD_PART",
-      "tier": "RARE",
+      "tier": "COMMON",
       "unstackable": true,
+      "force_wipe_recomb": true,
       "npc_sell_price": 10000,
       "requirements": [
         {
@@ -19750,8 +19756,9 @@
       "item_model": "hypixel_skyblock:item/fishing/rod_part/sinker/stingy_sinker",
       "name": "Stingy Sinker",
       "category": "FISHING_ROD_PART",
-      "tier": "RARE",
+      "tier": "UNCOMMON",
       "unstackable": true,
+      "force_wipe_recomb": true,
       "requirements": [
         {
           "type": "SKILL",
@@ -19771,8 +19778,9 @@
       "item_model": "hypixel_skyblock:item/fishing/rod_part/sinker/sponge_sinker",
       "name": "Sponge Sinker",
       "category": "FISHING_ROD_PART",
-      "tier": "RARE",
+      "tier": "COMMON",
       "unstackable": true,
+      "force_wipe_recomb": true,
       "npc_sell_price": 560,
       "requirements": [
         {
@@ -19795,6 +19803,7 @@
       "category": "FISHING_ROD_PART",
       "tier": "RARE",
       "unstackable": true,
+      "force_wipe_recomb": true,
       "npc_sell_price": 10000,
       "requirements": [
         {
@@ -19820,8 +19829,9 @@
       "item_model": "hypixel_skyblock:item/fishing/rod_part/hook/common_hook",
       "name": "Common Hook",
       "category": "FISHING_ROD_PART",
-      "tier": "RARE",
+      "tier": "COMMON",
       "unstackable": true,
+      "force_wipe_recomb": true,
       "requirements": [
         {
           "type": "SKILL",
@@ -19841,8 +19851,9 @@
       "item_model": "hypixel_skyblock:item/fishing/rod_part/hook/treasure_hook",
       "name": "Treasure Hook",
       "category": "FISHING_ROD_PART",
-      "tier": "RARE",
+      "tier": "LEGENDARY",
       "unstackable": true,
+      "force_wipe_recomb": true,
       "requirements": [
         {
           "type": "SKILL",
@@ -19864,6 +19875,7 @@
       "category": "FISHING_ROD_PART",
       "tier": "RARE",
       "unstackable": true,
+      "force_wipe_recomb": true,
       "requirements": [
         {
           "type": "SKILL",
@@ -19888,8 +19900,9 @@
       "item_model": "hypixel_skyblock:item/fishing/rod_part/hook/phantom_hook",
       "name": "Spooky Hook",
       "category": "FISHING_ROD_PART",
-      "tier": "RARE",
+      "tier": "EPIC",
       "unstackable": true,
+      "force_wipe_recomb": true,
       "npc_sell_price": 250000,
       "requirements": [
         {
@@ -19910,8 +19923,9 @@
       "item_model": "hypixel_skyblock:item/fishing/rod_part/hook/hotspot_hook",
       "name": "Hotspot Hook",
       "category": "FISHING_ROD_PART",
-      "tier": "RARE",
+      "tier": "EPIC",
       "unstackable": true,
+      "force_wipe_recomb": true,
       "requirements": [
         {
           "type": "SKILL",
@@ -19933,6 +19947,7 @@
       "category": "FISHING_ROD_PART",
       "tier": "RARE",
       "unstackable": true,
+      "force_wipe_recomb": true,
       "npc_sell_price": 250000,
       "requirements": [
         {
@@ -19955,6 +19970,7 @@
       "category": "FISHING_ROD_PART",
       "tier": "RARE",
       "unstackable": true,
+      "force_wipe_recomb": true,
       "requirements": [
         {
           "type": "SKILL",
@@ -19979,8 +19995,9 @@
       "item_model": "hypixel_skyblock:item/fishing/rod_part/line/titan_line",
       "name": "Titan Line",
       "category": "FISHING_ROD_PART",
-      "tier": "RARE",
+      "tier": "LEGENDARY",
       "unstackable": true,
+      "force_wipe_recomb": true,
       "requirements": [
         {
           "type": "SKILL",
@@ -20000,8 +20017,9 @@
       "item_model": "hypixel_skyblock:item/fishing/rod_part/line/speedy_line",
       "name": "Speedy Line",
       "category": "FISHING_ROD_PART",
-      "tier": "RARE",
+      "tier": "UNCOMMON",
       "unstackable": true,
+      "force_wipe_recomb": true,
       "requirements": [
         {
           "type": "SKILL",
@@ -20100,17 +20118,12 @@
       "name": "Travel Scroll to the Lotus Atoll",
       "category": "TRAVEL_SCROLL",
       "tier": "RARE",
-      "soulbound": "SOLO",
+      "soulbound": "COOP",
       "requirements": [
         {
-          "type": "SKILL",
-          "skill": "FISHING",
-          "level": 10
-        },
-        {
-          "type": "TROPHY_FISHING",
-          "trophy_type": "FROG",
-          "reward": "SILVER"
+          "type": "CHAPTER_TIER",
+          "chapter": "lotus",
+          "tier": 2
         }
       ],
       "id": "LOTUS_ATOLL_TRAVEL_SCROLL"
@@ -21983,11 +21996,12 @@
       "name": "Travel Scroll to the Bayou",
       "category": "TRAVEL_SCROLL",
       "tier": "RARE",
+      "soulbound": "COOP",
       "requirements": [
         {
-          "type": "SKILL",
-          "skill": "FISHING",
-          "level": 5
+          "type": "CHAPTER_TIER",
+          "chapter": "bayou",
+          "tier": 2
         }
       ],
       "id": "BAYOU_TRAVEL_SCROLL"
@@ -23724,6 +23738,15 @@
       "tier": "MYTHIC",
       "unstackable": true,
       "id": "FULL_CENTURY_CAKE_PACK"
+    },
+    {
+      "material": "SKULL_ITEM",
+      "durability": 3,
+      "name": "Faction Rabbit",
+      "tier": "COMMON",
+      "unstackable": true,
+      "can_auction": false,
+      "id": "FACTION_RABBIT"
     },
     {
       "material": "SKULL_ITEM",
@@ -27534,6 +27557,7 @@
       "tier": "LEGENDARY",
       "stats": {
         "STRENGTH": 20,
+        "CRITICAL_DAMAGE": 10,
         "ATTACK_SPEED": 2.5,
         "FEROCITY": 4
       },
@@ -119661,7 +119685,7 @@
       "material": "BONE",
       "item_model": "hypixel_skyblock:item/island_relevant/foraging_2/flexbone",
       "name": "Flexbone",
-      "description": "%%dark_gray%%%%italic%%These softened bones have absorbed moss over time, offering a flexible material.",
+      "description": "%%gray%%Caught as a %%gold%%Treasure %%gray%%catch in the %%red%%Tomb Floodway %%gray%%on the %%dark_green%%Moonglade Marsh%%gray%%.\n\n%%dark_gray%%%%italic%%These softened bones have absorbed moss over time, offering a flexible material.",
       "tier": "UNCOMMON",
       "components": [
         {

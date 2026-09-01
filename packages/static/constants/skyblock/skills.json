@@ -1,6 +1,6 @@
 {
   "success": true,
-  "version": "0.27.0.25",
+  "version": "0.27.1.0",
   "skills": {
     "FARMING": {
       "name": "Farming",
@@ -2661,7 +2661,7 @@
           "level": 12,
           "totalExpRequired": 22425,
           "unlocks": [
-            "??? Sea Creature",
+            "Ent Sea Creature",
             "Treasure Hunter XII   Grants +1.1➜1.2  Treasure Chance.",
             "+2  Health",
             "+15,000 Coins",
@@ -2672,8 +2672,8 @@
           "level": 13,
           "totalExpRequired": 32425,
           "unlocks": [
-            "??? Sea Creature",
-            "??? Sea Creature",
+            "Catfish Sea Creature",
+            "Grinch Sea Creature",
             "Treasure Hunter XIII   Grants +1.2➜1.3  Treasure Chance.",
             "+2  Health",
             "+20,000 Coins",
@@ -2684,9 +2684,9 @@
           "level": 14,
           "totalExpRequired": 47425,
           "unlocks": [
-            "??? Sea Creature",
-            "??? Sea Creature",
-            "??? Sea Creature",
+            "Fried Chicken Sea Creature",
+            "Carrot King Sea Creature",
+            "Nightmare Sea Creature",
             "Treasure Hunter XIV   Grants +1.3➜1.4  Treasure Chance.",
             "+2  Health",
             "+25,000 Coins",
