@@ -1,6 +1,6 @@
 {
   "success": true,
-  "version": "0.27.1.1",
+  "version": "0.27.1.2",
   "skills": {
     "FARMING": {
       "name": "Farming",
@@ -2813,8 +2813,8 @@
           "level": 24,
           "totalExpRequired": 2322425,
           "unlocks": [
-            "??? Sea Creature",
-            "??? Sea Creature",
+            "Abyssal Miner Sea Creature",
+            "Great White Shark Sea Creature",
             "Treasure Hunter XXIV   Grants +2.3➜2.4  Treasure Chance.",
             "+4  Health",
             "+200,000 Coins",
@@ -2825,8 +2825,8 @@
           "level": 25,
           "totalExpRequired": 3022425,
           "unlocks": [
-            "??? Sea Creature",
-            "??? Sea Creature",
+            "Yeti Sea Creature",
+            "Nessie Sea Creature",
             "Treasure Hunter XXV   Grants +2.4➜2.5  Treasure Chance.",
             "+4  Health",
             "+225,000 Coins",
@@ -2837,7 +2837,7 @@
           "level": 26,
           "totalExpRequired": 3822425,
           "unlocks": [
-            "??? Sea Creature",
+            "Grim Reaper Sea Creature",
             "Treasure Hunter XXVI   Grants +2.5➜2.6  Treasure Chance.",
             "+5  Health",
             "+250,000 Coins",
@@ -2848,7 +2848,7 @@
           "level": 27,
           "totalExpRequired": 4722425,
           "unlocks": [
-            "??? Sea Creature",
+            "Magma Slug Sea Creature",
             "Treasure Hunter XXVII   Grants +2.6➜2.7  Treasure Chance.",
             "+5  Health",
             "+275,000 Coins",
@@ -2859,8 +2859,8 @@
           "level": 28,
           "totalExpRequired": 5722425,
           "unlocks": [
-            "??? Sea Creature",
-            "??? Sea Creature",
+            "Nutcracker Sea Creature",
+            "Moogma Sea Creature",
             "Treasure Hunter XXVIII   Grants +2.7➜2.8  Treasure Chance.",
             "+5  Health",
             "+300,000 Coins",
@@ -2881,8 +2881,8 @@
           "level": 30,
           "totalExpRequired": 8022425,
           "unlocks": [
-            "??? Sea Creature",
-            "??? Sea Creature",
+            "Lava Leech Sea Creature",
+            "Titanoboa Sea Creature",
             "Treasure Hunter XXX   Grants +2.9➜3  Treasure Chance.",
             "+5  Health",
             "+350,000 Coins",
