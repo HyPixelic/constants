@@ -1,6 +1,6 @@
 {
   "success": true,
-  "version": "0.27.1.3",
+  "version": "0.27.1.6",
   "skills": {
     "FARMING": {
       "name": "Farming",
@@ -3044,7 +3044,7 @@
           "level": 45,
           "totalExpRequired": 38072425,
           "unlocks": [
-            "Lord Jawbus Sea Creature",
+            "??? Sea Creature",
             "Treasure Hunter XLV   Grants +4.4➜4.5  Treasure Chance.",
             "+5  Health",
             "+1,000,000 Coins",
@@ -3065,7 +3065,7 @@
           "level": 47,
           "totalExpRequired": 44072425,
           "unlocks": [
-            "Ragnarok Sea Creature",
+            "??? Sea Creature",
             "Treasure Hunter XLVII   Grants +4.6➜4.7  Treasure Chance.",
             "+5  Health",
             "+1,000,000 Coins",
