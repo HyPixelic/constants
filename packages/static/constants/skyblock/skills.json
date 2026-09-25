@@ -1,6 +1,6 @@
 {
   "success": true,
-  "version": "0.27.1.11",
+  "version": "0.27.1.14",
   "skills": {
     "FARMING": {
       "name": "Farming",
@@ -3065,7 +3065,7 @@
           "level": 47,
           "totalExpRequired": 44072425,
           "unlocks": [
-            "??? Sea Creature",
+            "Ragnarok Sea Creature",
             "Treasure Hunter XLVII   Grants +4.6➜4.7  Treasure Chance.",
             "+5  Health",
             "+1,000,000 Coins",
