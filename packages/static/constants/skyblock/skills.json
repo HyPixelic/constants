@@ -1,6 +1,6 @@
 {
   "success": true,
-  "version": "0.27.1.15",
+  "version": "0.27.1.17",
   "skills": {
     "FARMING": {
       "name": "Farming",
@@ -2780,7 +2780,7 @@
           "level": 21,
           "totalExpRequired": 822425,
           "unlocks": [
-            "Phantom Fisher Sea Creature",
+            "??? Sea Creature",
             "Treasure Hunter XXI   Grants +2➜2.1  Treasure Chance.",
             "+4  Health",
             "+125,000 Coins",
@@ -2791,8 +2791,8 @@
           "level": 22,
           "totalExpRequired": 1222425,
           "unlocks": [
-            "Lava Pigman Sea Creature",
-            "Fireproof Witch Sea Creature",
+            "??? Sea Creature",
+            "??? Sea Creature",
             "Treasure Hunter XXII   Grants +2.1➜2.2  Treasure Chance.",
             "+4  Health",
             "+150,000 Coins",
