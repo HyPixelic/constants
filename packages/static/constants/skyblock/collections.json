@@ -1,6 +1,6 @@
 {
   "success": true,
-  "version": "0.27.1.19",
+  "version": "0.27.2.3",
   "collections": {
     "FARMING": {
       "name": "Farming",
@@ -1784,7 +1784,7 @@
               "tier": 4,
               "amountRequired": 1500,
               "unlocks": [
-                "Weather Stick Recipe",
+                "Weather Wand Recipe",
                 "+6 Accessory Bag Slots",
                 "+4 SkyBlock XP"
               ]
@@ -2525,7 +2525,6 @@
               "amountRequired": 250000,
               "unlocks": [
                 "Enchanted Book (Prismatic I) Recipe",
-                "[Lvl 1] Precursor Drone Recipe",
                 "+4 SkyBlock XP"
               ]
             },
@@ -6078,7 +6077,7 @@
               "tier": 3,
               "amountRequired": 100,
               "unlocks": [
-                "Fishing Bag",
+                "Small Bait Sack Recipe",
                 "+4 SkyBlock XP"
               ]
             },
@@ -6094,7 +6093,7 @@
               "tier": 5,
               "amountRequired": 500,
               "unlocks": [
-                "+2,500 Fishing Experience",
+                "Medium Bait Sack Recipe",
                 "+4 SkyBlock XP"
               ]
             },
@@ -6110,7 +6109,7 @@
               "tier": 7,
               "amountRequired": 2500,
               "unlocks": [
-                "+9 Fishing Bag Slots",
+                "Large Bait Sack Recipe",
                 "+4 SkyBlock XP"
               ]
             },
@@ -6126,7 +6125,6 @@
               "tier": 9,
               "amountRequired": 30000,
               "unlocks": [
-                "+9 Fishing Bag Slots",
                 "+4 SkyBlock XP"
               ]
             },
@@ -6134,7 +6132,6 @@
               "tier": 10,
               "amountRequired": 45000,
               "unlocks": [
-                "+9 Fishing Bag Slots",
                 "+4 SkyBlock XP"
               ]
             },
@@ -6142,7 +6139,6 @@
               "tier": 11,
               "amountRequired": 60000,
               "unlocks": [
-                "+9 Fishing Bag Slots",
                 "+4 SkyBlock XP"
               ]
             }
@@ -6657,11 +6653,11 @@
         },
         "CLAY_BALL": {
           "name": "Clay Ball",
-          "maxTiers": 7,
+          "maxTiers": 9,
           "tiers": [
             {
               "tier": 1,
-              "amountRequired": 50,
+              "amountRequired": 25,
               "unlocks": [
                 "Clay Minion Recipes",
                 "+4 SkyBlock XP"
@@ -6671,7 +6667,7 @@
               "tier": 2,
               "amountRequired": 100,
               "unlocks": [
-                "Enchanted Clay Ball Recipe",
+                "Frail Exp Discount (-25%)",
                 "+4 SkyBlock XP"
               ]
             },
@@ -6679,23 +6675,23 @@
               "tier": 3,
               "amountRequired": 250,
               "unlocks": [
-                "Respiration Exp Discount (-25%)",
+                "Enchanted Clay Ball Recipe",
                 "+4 SkyBlock XP"
               ]
             },
             {
               "tier": 4,
-              "amountRequired": 1000,
+              "amountRequired": 500,
               "unlocks": [
-                "Frail Exp Discount (-25%)",
+                "Clay Bracelet Recipe",
                 "+4 SkyBlock XP"
               ]
             },
             {
               "tier": 5,
-              "amountRequired": 1500,
+              "amountRequired": 1000,
               "unlocks": [
-                "Clay Bracelet Recipe",
+                "Hotspot Talisman Recipe",
                 "+4 SkyBlock XP"
               ]
             },
@@ -6703,7 +6699,7 @@
               "tier": 6,
               "amountRequired": 2500,
               "unlocks": [
-                "+2,500 Fishing Experience",
+                "Respiration Exp Discount (-25%)",
                 "+4 SkyBlock XP"
               ]
             },
@@ -6711,7 +6707,23 @@
               "tier": 7,
               "amountRequired": 5000,
               "unlocks": [
+                "Hotspot Ring Recipe",
+                "+4 SkyBlock XP"
+              ]
+            },
+            {
+              "tier": 8,
+              "amountRequired": 10000,
+              "unlocks": [
                 "Enchanted Clay Block Recipe",
+                "+4 SkyBlock XP"
+              ]
+            },
+            {
+              "tier": 9,
+              "amountRequired": 25000,
+              "unlocks": [
+                "Hotspot Artifact Recipe",
                 "+4 SkyBlock XP"
               ]
             }
@@ -6844,7 +6856,7 @@
         },
         "METAL_HEART": {
           "name": "Living Metal Heart",
-          "maxTiers": 4,
+          "maxTiers": 5,
           "tiers": [
             {
               "tier": 1,
@@ -6856,7 +6868,7 @@
             },
             {
               "tier": 2,
-              "amountRequired": 20,
+              "amountRequired": 10,
               "unlocks": [
                 "Living Metal Anchor Recipe",
                 "+4 SkyBlock XP"
@@ -6864,7 +6876,15 @@
             },
             {
               "tier": 3,
-              "amountRequired": 60,
+              "amountRequired": 25,
+              "unlocks": [
+                "Nothing-in-a-Bottle Recipe",
+                "+4 SkyBlock XP"
+              ]
+            },
+            {
+              "tier": 4,
+              "amountRequired": 50,
               "unlocks": [
                 "Bluetooth Ring Recipe",
                 "+4 SkyBlock XP"
