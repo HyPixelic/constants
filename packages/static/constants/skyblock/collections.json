@@ -1,6 +1,6 @@
 {
   "success": true,
-  "version": "0.27.2.4",
+  "version": "0.27.2.6",
   "collections": {
     "FARMING": {
       "name": "Farming",
@@ -6891,7 +6891,7 @@
               ]
             },
             {
-              "tier": 4,
+              "tier": 5,
               "amountRequired": 100,
               "unlocks": [
                 "Polarvoid Book Recipe",
