@@ -158,6 +158,10 @@ const SKYBLOCK_SLAYER_LEVEL_CAPS: Record<string, number> = {
   vampire: 5,
 };
 
+const SKYBLOCK_LEVEL_XP = 100;
+
+const SKYBLOCK_LEVEL_CAP = 621.43;
+
 /**
  * Type containing all possible keys for the Constants Object.
  */
@@ -180,6 +184,8 @@ export type HyPixelicConstant =
   | "SKYBLOCK_DUNGEON_LEVEL_CAPS"
   | "SKYBLOCK_SLAYER_LEVEL_XP"
   | "SKYBLOCK_SLAYER_LEVEL_CAPS"
+  | "SKYBLOCK_LEVEL_XP"
+  | "SKYBLOCK_LEVEL_CAP"
   | "RESOURCEPACKS";
 
 /**
@@ -195,6 +201,8 @@ export type HyPixelicFetchableConstant = Exclude<
   | "SKYBLOCK_DUNGEON_LEVEL_CAPS"
   | "SKYBLOCK_SLAYER_LEVEL_XP"
   | "SKYBLOCK_SLAYER_LEVEL_CAPS"
+  | "SKYBLOCK_LEVEL_XP"
+  | "SKYBLOCK_LEVEL_CAP"
 >;
 
 type Resource = string | string[];
@@ -245,6 +253,8 @@ export default class Constants {
   public SKYBLOCK_DUNGEON_LEVEL_CAPS = SKYBLOCK_DUNGEON_LEVEL_CAPS;
   public SKYBLOCK_SLAYER_LEVEL_XP = SKYBLOCK_SLAYER_LEVEL_XP;
   public SKYBLOCK_SLAYER_LEVEL_CAPS = SKYBLOCK_SLAYER_LEVEL_CAPS;
+  public SKYBLOCK_LEVEL_XP = SKYBLOCK_LEVEL_XP;
+  public SKYBLOCK_LEVEL_CAP = SKYBLOCK_LEVEL_CAP;
   public RESOURCEPACKS: any = {};
 
   private resourcesToFetch: HyPixelicFetchableConstant[];
