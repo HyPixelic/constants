@@ -1,6 +1,6 @@
 {
   "success": true,
-  "version": "0.27.2.8",
+  "version": "0.27.2.9",
   "skills": {
     "FARMING": {
       "name": "Farming",
@@ -2849,7 +2849,7 @@
           "level": 27,
           "totalExpRequired": 4722425,
           "unlocks": [
-            "Magma Slug Sea Creature",
+            "??? Sea Creature",
             "Treasure Hunter XXVII   Grants +2.6➜2.7  Treasure Chance.",
             "+5 Health",
             "+275,000 Coins",
