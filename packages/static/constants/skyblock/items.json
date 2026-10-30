@@ -26080,6 +26080,7 @@
       "tier": "SPECIAL",
       "can_place": false,
       "has_uuid": true,
+      "soulbound": "COOP",
       "id": "TALISMAN_ENRICHMENT_SWAPPER"
     },
     {
