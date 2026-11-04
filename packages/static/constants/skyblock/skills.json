@@ -1,6 +1,6 @@
 {
   "success": true,
-  "version": "0.27.2.22",
+  "version": "0.27.2.24",
   "skills": {
     "FARMING": {
       "name": "Farming",
@@ -2849,7 +2849,7 @@
           "level": 27,
           "totalExpRequired": 4722425,
           "unlocks": [
-            "??? Sea Creature",
+            "Magma Slug Sea Creature",
             "Treasure Hunter 27   Grants +2.6➜2.7  Treasure Chance.",
             "+5 Health",
             "+275,000 Coins",
@@ -2860,7 +2860,7 @@
           "level": 28,
           "totalExpRequired": 5722425,
           "unlocks": [
-            "??? Sea Creature",
+            "Moogma Sea Creature",
             "Treasure Hunter 28   Grants +2.7➜2.8  Treasure Chance.",
             "+5 Health",
             "+300,000 Coins",
@@ -2881,8 +2881,8 @@
           "level": 30,
           "totalExpRequired": 8022425,
           "unlocks": [
-            "??? Sea Creature",
-            "??? Sea Creature",
+            "Lava Leech Sea Creature",
+            "Titanoboa Sea Creature",
             "Treasure Hunter 30   Grants +2.9➜3  Treasure Chance.",
             "+5 Health",
             "+350,000 Coins",
@@ -2893,8 +2893,8 @@
           "level": 31,
           "totalExpRequired": 9322425,
           "unlocks": [
-            "??? Sea Creature",
-            "??? Sea Creature",
+            "Magma Pillar Sea Creature",
+            "Pyroclastic Worm Sea Creature",
             "Treasure Hunter 31   Grants +3➜3.1  Treasure Chance.",
             "+5 Health",
             "+375,000 Coins",
@@ -2915,7 +2915,7 @@
           "level": 33,
           "totalExpRequired": 12222425,
           "unlocks": [
-            "??? Sea Creature",
+            "Lava Flame Sea Creature",
             "Treasure Hunter 33   Grants +3.2➜3.3  Treasure Chance.",
             "+5 Health",
             "+425,000 Coins",
