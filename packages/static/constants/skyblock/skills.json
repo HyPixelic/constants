@@ -1,6 +1,6 @@
 {
   "success": true,
-  "version": "0.27.3.3",
+  "version": "0.27.3.6",
   "skills": {
     "FARMING": {
       "name": "Farming",
@@ -3022,7 +3022,7 @@
           "level": 37,
           "totalExpRequired": 19222425,
           "unlocks": [
-            "Fiery Scuttler Sea Creature",
+            "??? Sea Creature",
             "Treasure Hunter XXXVII   Grants +3.6➜3.7  Treasure Chance.",
             "+5 Health",
             "+550,000 Coins",
@@ -3053,7 +3053,7 @@
           "level": 40,
           "totalExpRequired": 25522425,
           "unlocks": [
-            "Wiki Tiki Sea Creature",
+            "??? Sea Creature",
             "Treasure Hunter XL   Grants +3.9➜4  Treasure Chance.",
             "+5 Health",
             "+700,000 Coins",
@@ -3104,7 +3104,7 @@
           "level": 45,
           "totalExpRequired": 38072425,
           "unlocks": [
-            "Lord Jawbus Sea Creature",
+            "??? Sea Creature",
             "Treasure Hunter XLV   Grants +4.4➜4.5  Treasure Chance.",
             "+5 Health",
             "+1,000,000 Coins",
@@ -3125,7 +3125,7 @@
           "level": 47,
           "totalExpRequired": 44072425,
           "unlocks": [
-            "Ragnarok Sea Creature",
+            "??? Sea Creature",
             "Treasure Hunter XLVII   Grants +4.6➜4.7  Treasure Chance.",
             "+5 Health",
             "+1,000,000 Coins",
